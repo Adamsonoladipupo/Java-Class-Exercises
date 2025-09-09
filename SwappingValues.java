@@ -14,7 +14,7 @@ int b = input.nextInt();
 
 a = b + 0;
 b = a + 0;
-
+// This comment is done on Github to test pull command
 
 System.out.printf("first number is now %d, second number is now %d", a, b);
 
