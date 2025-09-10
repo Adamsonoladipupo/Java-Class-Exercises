@@ -10,13 +10,12 @@ System.out.print("Enter second number: ");
 int b = input.nextInt();
 
 // swapping computation
+a=a*b;
+b=a/b;
+a=a/b;
 
-
-a = b + 0;
-b = a + 0;
-// This comment is done on Github to test pull command
-
-System.out.printf("first number is now %d, second number is now %d", a, b);
+System.out.println(a);
+System.out.println(b);
 
 }
 }
