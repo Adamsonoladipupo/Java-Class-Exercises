@@ -1,3 +1,11 @@
+/*
+Pseudo Code
+* Prompt the user to enter 3 inputs and store the input in variables (a, b, c)
+* Check if (a) is equals to (b) and a is equals to c and b equals to c . Then display "Equilateral", if not
+* Check if a is equals to b or a equals to c or c equals to b. Then display Isosceles, if not
+* display scalene
+*/
+
 import java.util.Scanner;
 
 public class TypesOfTriangle{
