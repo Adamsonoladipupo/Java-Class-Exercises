@@ -3,3 +3,5 @@ Pseudo Code for TypesOfTriangle program
 * Check if (a) is equals to (b) and a is equals to c and b equals to c . Then display "Equilateral", if not
 * Check if a is equals to b or a equals to c or c equals to b. Then display Isosceles, if not
 * display scalene
+
+Grading System

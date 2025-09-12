@@ -1,3 +1,9 @@
+/*
+Pseudo Code
+* Prompt the user to enter 3 inputs and store the input in variables (a, b, c)
+
+*/
+
 import java.util.Scanner;
 
 public class NumbersInWords{

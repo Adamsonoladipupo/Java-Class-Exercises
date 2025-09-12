@@ -1,6 +1,12 @@
+/*
+Pseudo Code
+* Prompt the user to enter 3 inputs and store the input in variables (a, b, c)
+* 
+*/
+
 import java.util.Scanner;
 
-public class GradingSystem{
+public class GradingSystem{'
 public static void main(String[] args){
 
 System.out.print("Welcome! This program helps you grade your scores");
