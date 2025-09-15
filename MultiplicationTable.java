@@ -17,14 +17,14 @@ System.out.print("Enter number: ");
 Scanner input = new Scanner(System.in);
 int number = input.nextInt();
 
-int multiNumber = 0;
-int result = 0;
+int xNumber = 0;
+int multiplicationResult = 0;
 int counter = 0;
 while (counter < 12){
-multiNumber +=1;
-result = number * multiNumber;
+xNumber +=1;
+multiplicationResult = number * xNumber;
 counter ++;
-System.out.printf("%d x %d = %d %n", number, multiNumber, result);
+System.out.printf("%d x %d = %d %n", number, xNumber, multiplicationResult);
 }
 
 }
