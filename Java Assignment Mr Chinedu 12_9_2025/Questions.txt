@@ -1,0 +1,27 @@
+Write a program that takes three numbers from a user and returns the largest one using only control statements.
+
+Write a program that takes an age from a user and returns 'child' (0–12), 'teen' (13–19), 'adult' (20–59), or 'senior' (60+). ***
+
+Write a program that takes a temperature in Celsius and returns 'Freezing' (<0), 'Cold' (0–15), 'Warm' (16–25), or 'Hot' (>25). ***
+
+Write a prgram that takes a number and returns 'even' or 'odd', and 'invalid' if not an integer. ***
+
+Write a program that takes a grade letter (A–F) and returns 'Pass' for A–D, 'Fail' for F, and 'Invalid' otherwise. ***
+
+Write a program that takes a number of hours worked and hourly rate, and returns total pay, applying 1.5times for hours over 40.
+
+Write a program that takes a student’s attendance percentage and average score, and returns 'Eligible' for exam if both ≥ 75, otherwise 'Not Eligible'. ***
+
+Write a program that takes a number and returns 'Positive Even', 'Positive Odd', 'Negative Even', 'Negative Odd', or 'Zero'. **
+
+Write a program that takes a bank account balance and returns 'Low' (<100), 'Medium' (100–1000), or 'High' (>1000). ***
+
+Write a program that takes a number and returns 'Divisible by 3', 'Divisible by 5', 'Divisible by both', or 'Not divisible'. ***
+
+N/B:
+1) Every input is from a user.
+2) Write your pseudocode>
+3) Push to git and send the repo URL to me.
+4) Time: On or before 11:59pm on Saturday.
+
+Enjoy your coding experience.

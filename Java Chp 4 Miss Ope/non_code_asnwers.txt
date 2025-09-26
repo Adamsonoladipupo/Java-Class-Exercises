@@ -1,0 +1,64 @@
+4.10 The single-if statement and the while statement are similar in that they are both condition statement that are basically used to condition a line or block of code to run if a particular condition(s) is met. On the contrary single if statement only execute one while while statement can continues to execute as long as the condition is true. 
+
+
+4.11 When a java program attempts to divide a number by another number only the number before the decimal point is accounted for while the number after the decimal point is cut off, to prevent this one can use module, although module account for only the numbers after the decimal point. A balance line is the use of double or float data type which account for both the number after and before the decimal points.
+
+
+4.12 More can one control statement can be combine nesting them together
+
+4.13 
+
+
+4.14  The value of x will be:  after x = y++ is 4 and x = ++y is4
+
+
+4.15 Identify and correct the errors in each of the following pieces of code.
+a if (age >= 65){
+   System.out.println("Age is greater than or equal to 65");
+ else{
+   System.out.println("Age is less than 65)"; }
+
+b. int x == 1, total == 0;
+ while (x <= 10) {
+    total ++x;
+    System.out.println(x);
+ } 
+
+c) while (x <= 100){
+   total += x;
+   ++x; 
+}
+
+d) while (y =! 0){ 
+System.out.println (y);
+}
+
+
+4.16 What does the following program print?
+ 1 // Exercise 4.16: Mystery.java
+ 2 public class Mystery {
+ 3   public static void main(String[] args) {
+ 4      int x = -2;
+ 5      int total = 0;
+ 6
+ 7      while (x <= 10) {
+ 8         int y = x + 2;
+ 9         x++;
+ 10         total += y;
+ 11         System.out.printf("Y is: %d and total is %d\n", y, total);
+ 12      }// end while 
+ 13
+ 14   }// end main  
+ 15 } // end class Mystery
+
+WHAT IT'S PRINT
+Y is: 0 and the total is 0
+Y is: 1 and the total is 1
+Y is: 2 and the total is 3
+Y is: 4 and the total is 3
+Y is: 5 and the total is 3
+Y is: 6 and the total is 3
+Y is: 7 and the total is 3
+Y is: 8 and the total is 3
+Y is: 9 and the total is 3
+Y is: 10 and the total is 3
