@@ -219,6 +219,24 @@ public class Nokia3310{
 						}
 
 					} // end of call cost menu
+					case 7-> {
+						String callCostSettingsMenu = """
+							Call cost settings selected...
+							Select an option to proceed
+
+							1-> Call cost limit
+							2-> Show call cost in
+						""";
+						System.out.print(callCostSettingsMenu);
+
+						int callCostSettings = inputCollector.nextInt();
+						switch(callCostSettings){
+							case 1-> {System.out.print("Call cost limit");}
+							case 2-> {System.out.print("Show call cost in");}
+						}
+
+					} // end of call cost settings menu
+					case 8-> {System.out.print("Prepaid credit");}
 				}
 			} // end of callRegisterMenu
 			case 5 -> {
@@ -251,7 +269,96 @@ public class Nokia3310{
 					case 9-> {System.out.print("Screen saver");}
 				}
 			} // end of toneMenu
-			case 6 -> {System.out.print("Settings");}
+			case 6 -> {
+				String settingsMenu = """
+					Call register selected...
+					Select an option to proceed
+
+					1-> Call settings
+					2-> Phone settings
+					3-> Security settings
+					4-> Restore factory settings
+				""";
+				System.out.print(settingsMenu);
+				
+				int settings = inputCollector.nextInt();
+				switch(settings) {
+					case 1-> {
+						String callSettingsMenu = """
+							Call settings selected...
+							Select an option to proceed
+
+							1-> Automatic redial
+							2-> Speed dialiling
+							3-> Call waiting options
+							4-> Own number sending
+							5-> Phone line in use
+							6-> Automatic answer
+						""";
+						System.out.print(callSettingsMenu);
+
+						int callSettings = inputCollector.nextInt();
+						switch(callSettings){
+							case 1-> {System.out.print("Automatic redial");}
+							case 2-> {System.out.print("Speed dialiling");}
+							case 3-> {System.out.print("Call waiting options");}
+							case 4-> {System.out.print("Own number sending");}
+							case 5-> {System.out.print("Phone line in use");}
+							case 6-> {System.out.print("Automatic answer");}
+						}
+
+					} //end of call settings menu
+					case 2-> {
+						String phoneSettingsMenu = """
+							Phone settings selected...
+							Select an option to proceed
+
+							1-> Language
+							2-> Cell info display
+							3-> Welcome note
+							4-> Network selection
+							5-> Lights
+							6-> Confirm SIM service action
+						""";
+						System.out.print(phoneSettingsMenu);
+
+						int phoneSettings = inputCollector.nextInt();
+						switch(phoneSettings){
+							case 1-> {System.out.print("Language");}
+							case 2-> {System.out.print("Cell info display");}
+							case 3-> {System.out.print("Welcome note");}
+							case 4-> {System.out.print("Network selection");}
+							case 5-> {System.out.print("Lights");}
+							case 6-> {System.out.print("Confirm SIM service action");}
+						}
+					} // end of phone Settings menu
+					case 3-> {
+						String securitySettingsMenu = """
+							Security settings selected...
+							Select an option to proceed
+
+							1-> PIN code request
+							2-> Call baring service
+							3-> Fixed dialling
+							4-> Closed user group
+							5-> Phone Security
+							6-> Change access codes
+						""";
+						System.out.print(securitySettingsMenu);
+
+						int securitySettings = inputCollector.nextInt();
+						switch(securitySettings){
+							case 1-> {System.out.print("PIN code request");}
+							case 2-> {System.out.print("Call baring service");}
+							case 3-> {System.out.print("Fixed dialling");}
+							case 4-> {System.out.print("Closed user group");}
+							case 5-> {System.out.print("Phone Security");}
+							case 6-> {System.out.print("Change access codes");}
+						}
+					} // end of security settings menu
+					case 4-> {System.out.print("Restore factory settings");}
+				}
+			} // end of settingsMenu
 			case 7 -> {System.out.print("Call divert");}
 			case 9 -> {System.out.print("Calculator");}
 			case 10 -> {System.out.print("Reminder");}
