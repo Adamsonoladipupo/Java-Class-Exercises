@@ -1,218 +1,89 @@
 import java.util.Scanner;
 
 public class Nokia3310{
-public static void main(String[] args){
-	Scanner inputCollector = new Scanner(System.in);
-	System.out.println("Welcome! This is the Nokia 3310 Menu funtions");
-
-	String menu = """
-		Select an option to get started:
-		1-> Phone book
-		2-> Messages
-		3-> Chat
-		4-> Call Register
-		5-> Tones
-		6-> Settings
-		7-> Call Divert
-		8-> Games
-		9-> Calculator
-		10-> Reminder
-		11-> Clock
-		12-> Profiles
-		13-> SIM Services
-		0-> Back
-	
-	""";
-
-	System.out.println(menu);
-	
-	System.out.print("Make a selection: ");
-	int mainMenu = inputCollector.nextInt();
-
-	switch(mainMenu){
-		case 1-> {
-
-				String phoneBook = """
-				Select an option to proceed:
-				1-> Search
-				2-> Service Number
-				3-> Add Name
-				4-> Erase
-				5-> Edit
-				6-> Assign Tone
-				7-> Send B'card
-				8-> Options
-				9-> Speed Dails
-				10-> Voice tags
-				0-> Back
-	
-			""";
-			System.out.println(phoneBook);
-
-			System.out.print("Make a selection: ");
-			int phoneBookInt = inputCollector.nextInt();
-
-			switch(phoneBookInt){
-			case 1-> {System.out.println("Search");}
-			case 2-> {System.out.println("Service Number");}
-			case 3-> {System.out.println("Add Name");}
-			case 4-> {System.out.println("Erase");}
-			case 5-> {System.out.println("Edit");}
-			case 6-> {System.out.println("Assign Tone");}
-			case 7-> {System.out.println("Send B'card");}
-			case 8-> {
-				String options = """
-					Select an option to proceed:
-					1-> Type of view
-					2-> Voice tags
-					0-> Back
-				""";
-				System.out.println(options);
-
-				System.out.print("Make a selection: ");
-				int optionsInt = inputCollector.nextInt();
-
-				switch(optionsInt){
-					case 1-> {System.out.println("Type of view");}
-					case 2-> {System.out.println("Memory Status");}
-					case 0-> {System.out.println("Back");}
-				}
-				}
-			case 9-> {System.out.println("Speed Dials");}
-			case 10-> {System.out.println("Voice tags");}
-			case 0-> {System.out.println("Back");}
-
-		}
-
+	public static void main(String[] args){
+		String nokia3310Menu = """
+			Welcome! Select an option to get started
 			
-
-
-
-
-// _________________________________________________________________________________________________________
-
-
-
-
-		}
-		case 2-> {
-				String messages = """
-				Select an option to proceed:
-				1-> Write messages
-				2-> Inbox
-				3-> Outbook
-				4-> Picture messages
-				5-> Template
-				6-> Smileys
-				7-> Message Settings
-				8-> Info Service
-				9-> Voice mailbox number
-				10-> Service command editor
-				0-> Back
-	
-			""";
-				System.out.println(messages);
-
-				System.out.print("Make a selection: ");
-				int messagesInt = inputCollector.nextInt();
-
-				switch(messagesInt){
-				case 1-> {System.out.println("Write Messages");}
-				case 2-> {System.out.println("Inbox");}
-				case 3-> {System.out.println("Outbox");}
-				case 4-> {System.out.println("Picture messages");}
-				case 5-> {System.out.println("Templates");}
-				case 6-> {System.out.println("Smileys");}
-
-				case 8-> {System.out.println("Info Service");}
-				case 9-> {System.out.println("Voice mailbox number");}
-				case 10-> {System.out.println("Service command editor");}
-				case 0 -> {System.out.println("Back");}
-				case 7-> {
-					
-					//System.out.println("Set1");
-					String set1 = """
-						Select an option to proceed:
-						1-> Message Centre number
-						2-> Messages sent as
-						3-> Message Validity
-						0-> Back
-					""";
-					System.out.println(set1);
-
-					System.out.print("Make a selection: ");
-					int set1Int = inputCollector.nextInt();
-					
-					switch(set1Int){
-						case 1-> {System.out.println("Messages centre number");}
-						case 2-> {System.out.println("Messages sent as");}
-						case 3-> {System.out.println("Message Validity");}
-						case 0-> {System.out.println("Back");}
-					}
-
-					}
-
-					case 2-> {
-						// System.out.println("Common");
-						String common = """
-						Select an option to proceed:
-						1-> Delivery report
-						2-> Reply via same centre
-						3-> Character support
-						0-> Back
-					""";
-					System.out.println(common);
-
-					System.out.print("Make a selection: ");
-					int commonInt = inputCollector.nextInt();
-					
-					switch(commonInt){
-						case 1-> {System.out.println("Delivery report");}
-						case 2-> {System.out.println("Reply via same centre");}
-						case 3-> {System.out.println("Character support");}
-						case 0-> {System.out.println("Back");}
-					}
-
-					}
-
-					case 0-> {System.out.println("Back");}
-				}
-
-
-				}
-
-
-
-
-
-
-		 // test
-
-
-
-		}
-
-
-
-
-
-
-// _________________________________________________________________________________________________________
+			1-> Phone book
+			2-> Messages
+			3-> Chat
+			4-> Call register
+			5-> Tones
+			6-> Settings
+			7-> Call divert
+			8-> Games
+			9-> Calculator
+			10-> Reminders
+			11-> Clock
+			12-> Alarm
+			13-> SIM services
+		""";
+		System.out.println(nokia3310Menu);
 		
+		Scanner inputCollector = new Scanner(System.in);
+		int mainMenu = inputCollector.nextInt();
+		
+		switch(mainMenu) {
+			case 1 -> {
+				String phoneBookMenu = """
+					Phone book selected...
+					Select an option to proceed
+					1-> Search
+					2-> Services number
+					3-> Add name
+					4-> Erase
+					5-> Edit
+					6-> Assign tone
+					7-> Send b'card
+					8-> Options
+					9-> Speed dials
+					10-> Voice tags
+				""";
+				System.out.print(phoneBookMenu);
 
-		case 3-> {System.out.println("Chat");}
-		case 4-> {System.out.println("Call Register");}
-		case 5-> {System.out.println("Tones");}
-		case 6-> {System.out.println("Settings");}
-		case 7-> {System.out.println("Call Divert");}
-		case 8-> {System.out.println("Games");}
-		case 9-> {System.out.println("Calculator");}
-		case 10-> {System.out.println("Reminder");}
-		case 11-> {System.out.println("Clock");}
-		case 12-> {System.out.println("Profiles");}
-		case 13-> {System.out.println("SIM Services");}
-		case 0-> {System.out.println("Back");}
+				int phoneBook = inputCollector.nextInt();
+				
+				switch(phoneBook){
+					case 1-> {System.out.print("Search");}
+					case 2-> {System.out.print("Services number");}
+					case 3-> {System.out.print("Add number");}
+					case 4-> {System.out.print("Erase");}
+					case 5-> {System.out.print("Edit");}
+					case 6-> {System.out.print("Assign tone");}
+					case 7-> {System.out.print("Send b'card");}
+					case 8-> {
+						String optionMenu = """
+							Options selected...
+							Select an option to proceed
+							1-> Type of view
+							2-> Memory Status
+						""";
+						System.out.print(optionMenu);
 
-	}
-}
-}
+						int options = inputCollector.nextInt();
+						switch(options){
+							case 1-> {System.out.print("Type of view");}
+							case 2-> {System.out.print("Memory statuc");}
+						}
+					} // end of optionMenu
+					case 9-> {System.out.print("Speed dials");}
+					case 10-> {System.out.print("Voice tags");}
+				}
+				
+			} // end of phoneBookMenu
+			case 2 -> {System.out.print("Messages");}
+			case 3 -> {System.out.print("Chat");}
+			case 4 -> {System.out.print("Call register");}
+			case 5 -> {System.out.print("Tones");}
+			case 6 -> {System.out.print("Settings");}
+			case 7 -> {System.out.print("Call divert");}
+			case 9 -> {System.out.print("Calculator");}
+			case 10 -> {System.out.print("Reminder");}
+			case 11 -> {System.out.print("Clock");}
+			case 12 -> {System.out.print("Alarm");}
+			case 13 -> {System.out.print("SIM services");}
+
+		} // end of mainMenu
+	}// end of main method
+}// end of main class
