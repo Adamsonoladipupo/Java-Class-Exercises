@@ -72,7 +72,88 @@ public class Nokia3310{
 				}
 				
 			} // end of phoneBookMenu
-			case 2 -> {System.out.print("Messages");}
+			case 2 -> {
+				String messageMenu = """
+					Messages selected...
+					Select an option to proceed
+
+					1-> Write messages
+					2-> Inbox
+					3-> Outbox
+					4-> Picture messages
+					5-> Templates
+					6-> Smileys
+					7-> Message settings
+					8-> Info service
+					9-> Voice mailbox number
+					10-> Service command editor
+				""";
+				System.out.print(messageMenu);
+
+				int messages = inputCollector.nextInt();
+				switch(messages) {
+					case 1-> {System.out.print("Write message");}
+					case 2-> {System.out.print("Inbox");}
+					case 3-> {System.out.print("Outbox");}
+					case 4-> {System.out.print("Picture messages");}
+					case 5-> {System.out.print("Template");}
+					case 6-> {System.out.print("Smileys");}
+					case 7-> {
+						String messageSettingMenu = """
+							Message settings selected...
+							Select an option to proceed
+
+							1-> Set1
+							2-> Common
+						""";
+						System.out.print(messageSettingMenu);
+
+						int messageSettings = inputCollector.nextInt();
+						switch(messageSettings){
+							case 1-> {
+								String set1Menu = """
+									Set1 Selcted...
+									Select an option to proceed
+									
+									1-> Message centre number
+									2-> Message sent as
+									3-> Message validity
+								""";
+								System.out.print(set1Menu);
+								
+								int set1 = inputCollector.nextInt();
+								switch(set1){
+									case 1-> {System.out.print("Message centre number");}
+									case 2-> {System.out.print("Message sent as");}
+									case 3-> {System.out.print("Message validity");}
+								}
+							} //end of set1Menu 
+							case 2-> {
+								String commonMenu = """
+									Common Selcted...
+									Select an option to proceed
+									
+									1-> Delivery report
+									2-> Reply via same centre
+									3-> Character support
+								""";
+								System.out.print(commonMenu);
+								
+								int common = inputCollector.nextInt();
+								switch(common){
+									case 1-> {System.out.print("Delivery report");}
+									case 2-> {System.out.print("Reply via same centre");}
+									case 3-> {System.out.print("Character support");}
+								}
+							} //end of commonMenu 
+						}
+					} //end of messageSettingMenu
+					case 8-> {System.out.print("Info service");}
+					case 9-> {System.out.print("Voice mailbox numbe");}
+					case 10-> {System.out.print("Service command editor");}
+				}
+
+			}
 			case 3 -> {System.out.print("Chat");}
 			case 4 -> {System.out.print("Call register");}
 			case 5 -> {System.out.print("Tones");}
