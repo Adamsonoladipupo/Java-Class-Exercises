@@ -362,7 +362,29 @@ public class Nokia3310{
 			case 7 -> {System.out.print("Call divert");}
 			case 9 -> {System.out.print("Calculator");}
 			case 10 -> {System.out.print("Reminder");}
-			case 11 -> {System.out.print("Clock");}
+			case 11 -> {
+				String clockMenu = """
+					Clock selected...
+					Select an option to proceed
+
+					1-> Alarm clock
+					2-> Clock settings
+					3-> Date settings
+					4-> Stopwatch
+					5-> Countdown timer
+					6-> Auto update of date and time
+				""";
+				System.out.print(clockMenu);
+				int clock = inputCollector.nextInt();
+				switch(clock) {
+					case 1-> {System.out.print("Alarm clock");}
+					case 2-> {System.out.print("Clock settings");}
+					case 3-> {System.out.print("Date settings");}
+					case 4-> {System.out.print("Stopwatch");}
+					case 5-> {System.out.print("Countdown timer");}
+					case 6-> {System.out.print("Auto update of date and time");}
+				}
+			} // end of clock menu
 			case 12 -> {System.out.print("Alarm");}
 			case 13 -> {System.out.print("SIM services");}
 
