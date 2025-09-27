@@ -164,6 +164,10 @@ public class Nokia3310{
 					2-> Received call
 					3-> Dailled call
 					4-> Erase recent call lists
+					5-> Show call duration
+					6-> Show call costs
+					7-> Call cost settings
+					8-> Prepaid credit
 				""";
 				System.out.print(callRegisterMenu);
 				
@@ -173,6 +177,48 @@ public class Nokia3310{
 					case 2-> {System.out.print("Received call");}
 					case 3-> {System.out.print("Dailled call");}
 					case 4-> {System.out.print("Erase recent call lists");}
+					case 5-> {
+						String callDurationMenu = """
+							Show Call duration selected...
+							Select an option to proceed
+
+							1-> Last call duration
+							2-> All calls' duration
+							3-> Received calls; duration
+							4-> Dialled calls' duration
+							5-> Clear timers
+						""";
+						System.out.print(callDurationMenu);
+
+						int callDuration = inputCollector.nextInt();
+						switch(callDuration){
+							case 1-> {System.out.print("Last call duration");}
+							case 2-> {System.out.print("All calls' duration");}
+							case 3-> {System.out.print("Received calls; duration");}
+							case 4-> {System.out.print("Dialled calls' duration");}
+							case 5-> {System.out.print("Clear timers");}
+						}
+
+					} //end of call duration menu
+					case 6-> {
+						String callCostMenu = """
+							Show call cost selected...
+							Select an option to proceed
+
+							1-> Last call cost
+							2-> All calls' cost
+							3-> Clear counters
+						""";
+						System.out.print(callCostMenu);
+
+						int callCost = inputCollector.nextInt();
+						switch(callCost){
+							case 1-> {System.out.print("Last call cost");}
+							case 2-> {System.out.print("All calls' cost");}
+							case 3-> {System.out.print("Clear counters");}
+						}
+
+					} // end of call cost menu
 				}
 			} // end of callRegisterMenu
 			case 5 -> {

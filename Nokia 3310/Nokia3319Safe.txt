@@ -155,8 +155,102 @@ public class Nokia3310{
 
 			}
 			case 3 -> {System.out.print("Chat");}
-			case 4 -> {System.out.print("Call register");}
-			case 5 -> {System.out.print("Tones");}
+			case 4 -> {
+				String callRegisterMenu = """
+					Call register selected...
+					Select an option to proceed
+
+					1-> Missed calls
+					2-> Received call
+					3-> Dailled call
+					4-> Erase recent call lists
+					5-> Show call duration
+					6-> Show call costs
+					7-> Call cost settings
+					8-> Prepaid credit
+				""";
+				System.out.print(callRegisterMenu);
+				
+				int callRegister = inputCollector.nextInt();
+				switch(callRegister) {
+					case 1-> {System.out.print("Missed calls");}
+					case 2-> {System.out.print("Received call");}
+					case 3-> {System.out.print("Dailled call");}
+					case 4-> {System.out.print("Erase recent call lists");}
+					case 5-> {
+						String callDurationMenu = """
+							Show Call duration selected...
+							Select an option to proceed
+
+							1-> Last call duration
+							2-> All calls' duration
+							3-> Received calls; duration
+							4-> Dialled calls' duration
+							5-> Clear timers
+						""";
+						System.out.print(callDurationMenu);
+
+						int callDuration = inputCollector.nextInt();
+						switch(callDuration){
+							case 1-> {System.out.print("Last call duration");}
+							case 2-> {System.out.print("All calls' duration");}
+							case 3-> {System.out.print("Received calls; duration");}
+							case 4-> {System.out.print("Dialled calls' duration");}
+							case 5-> {System.out.print("Clear timers");}
+						}
+
+					} //end of call duration menu
+					case 6-> {
+						String callCostMenu = """
+							Show call cost selected...
+							Select an option to proceed
+
+							1-> Last call cost
+							2-> All calls' cost
+							3-> Clear counters
+						""";
+						System.out.print(callCostMenu);
+
+						int callCost = inputCollector.nextInt();
+						switch(callCost){
+							case 1-> {System.out.print("Last call cost");}
+							case 2-> {System.out.print("All calls' cost");}
+							case 3-> {System.out.print("Clear counters");}
+						}
+
+					} // end of call cost menu
+				}
+			} // end of callRegisterMenu
+			case 5 -> {
+				String toneMenu = """
+					Tones selected...
+					Select an option to proceed
+
+					1-> Ringing tone
+					2-> Ringing Volume
+					3-> Incoming call alert
+					4-> Composer
+					5-> Message alert tone
+					6-> Keypad tones
+					7-> Warning and game tones
+					8-> Vibrating alert
+					9-> Screen saver
+				""";
+				System.out.print(toneMenu);
+				
+				int tones = inputCollector.nextInt();
+				switch(tones) {
+					case 1-> {System.out.print("Ringing tone");}
+					case 2-> {System.out.print("Ringing volume");}
+					case 3-> {System.out.print("Incoming call alert");}
+					case 4-> {System.out.print("Composer");}
+					case 5-> {System.out.print("Message alert tone");}
+					case 6-> {System.out.print("Keypad tones");}
+					case 7-> {System.out.print("Warning and game tones");}
+					case 8-> {System.out.print("Vibration alert");}
+					case 9-> {System.out.print("Screen saver");}
+				}
+			} // end of toneMenu
 			case 6 -> {System.out.print("Settings");}
 			case 7 -> {System.out.print("Call divert");}
 			case 9 -> {System.out.print("Calculator");}
