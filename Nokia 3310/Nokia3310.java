@@ -155,8 +155,56 @@ public class Nokia3310{
 
 			}
 			case 3 -> {System.out.print("Chat");}
-			case 4 -> {System.out.print("Call register");}
-			case 5 -> {System.out.print("Tones");}
+			case 4 -> {
+				String callRegisterMenu = """
+					Call register selected...
+					Select an option to proceed
+
+					1-> Missed calls
+					2-> Received call
+					3-> Dailled call
+					4-> Erase recent call lists
+				""";
+				System.out.print(callRegisterMenu);
+				
+				int callRegister = inputCollector.nextInt();
+				switch(callRegister) {
+					case 1-> {System.out.print("Missed calls");}
+					case 2-> {System.out.print("Received call");}
+					case 3-> {System.out.print("Dailled call");}
+					case 4-> {System.out.print("Erase recent call lists");}
+				}
+			} // end of callRegisterMenu
+			case 5 -> {
+				String toneMenu = """
+					Tones selected...
+					Select an option to proceed
+
+					1-> Ringing tone
+					2-> Ringing Volume
+					3-> Incoming call alert
+					4-> Composer
+					5-> Message alert tone
+					6-> Keypad tones
+					7-> Warning and game tones
+					8-> Vibrating alert
+					9-> Screen saver
+				""";
+				System.out.print(toneMenu);
+				
+				int tones = inputCollector.nextInt();
+				switch(tones) {
+					case 1-> {System.out.print("Ringing tone");}
+					case 2-> {System.out.print("Ringing volume");}
+					case 3-> {System.out.print("Incoming call alert");}
+					case 4-> {System.out.print("Composer");}
+					case 5-> {System.out.print("Message alert tone");}
+					case 6-> {System.out.print("Keypad tones");}
+					case 7-> {System.out.print("Warning and game tones");}
+					case 8-> {System.out.print("Vibration alert");}
+					case 9-> {System.out.print("Screen saver");}
+				}
+			} // end of toneMenu
 			case 6 -> {System.out.print("Settings");}
 			case 7 -> {System.out.print("Call divert");}
 			case 9 -> {System.out.print("Calculator");}
