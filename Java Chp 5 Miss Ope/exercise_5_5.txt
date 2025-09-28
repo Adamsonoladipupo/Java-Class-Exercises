@@ -1,0 +1,5 @@
+Four basic elements of counter-controlled iteration are:
+- Counter : An integer variable declared and assigned a value, it serve as the reference point to the number of iteration the loop will under go.
+- Condition : This is one of the most vital part of a counter control iteration, it determines the amount of time the loop will run.
+- Increment: This repeatedly change the value of the counter, it can either increase it's value or decreases it.
+- Statement: This is the block of code that runs in the iteration statement 

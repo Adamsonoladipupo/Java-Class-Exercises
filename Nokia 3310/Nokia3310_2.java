@@ -23,7 +23,7 @@ public class Nokia3310_2{
 		
 		Scanner inputCollector = new Scanner(System.in);
 		int mainMenu = inputCollector.nextInt();
-		
+
 		switch(mainMenu) {
 			case 1 -> {
 				String phoneBookMenu = """
@@ -39,6 +39,7 @@ public class Nokia3310_2{
 					8-> Options
 					9-> Speed dials
 					10-> Voice tags
+					
 				""";
 				System.out.print(phoneBookMenu);
 
@@ -389,5 +390,6 @@ public class Nokia3310_2{
 			case 13 -> {System.out.print("SIM services");}
 
 		} // end of mainMenu
+
 	}// end of main method
 }// end of main class
