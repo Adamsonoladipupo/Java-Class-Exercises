@@ -1,0 +1,2 @@
+The While and For iteration are statements are used to repeatedly run the block/ line of code withing them. 
+The while also know as indefinite loop do not have a predefine number of times it will iterate, on the other hand the for iteration has a predefine number of iteration, it is also known as a definite loop. 

@@ -1,0 +1,2 @@
+Compare and contrast the break and continue statements.
+When break is used in an iteration statements, the execution of the code in the iteration statement stops at the point where it is placed and continues from the next code right after the statement on the other hand a continue statement stop the code to stop the code to stop running and move to the next iteration. 

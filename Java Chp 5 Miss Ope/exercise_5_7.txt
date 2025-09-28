@@ -1,0 +1,3 @@
+If you need to execute the body of a loop at least once, would it be better to use a do…while
+ statement or a while statement?
+If a body of loop needs to be run once a do ... while loop is better reason been that it's conditional statement is checked after it first iteration. 
