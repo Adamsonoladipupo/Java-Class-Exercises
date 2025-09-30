@@ -62,3 +62,5 @@ Y is: 7 and the total is 3
 Y is: 8 and the total is 3
 Y is: 9 and the total is 3
 Y is: 10 and the total is 3
+
+4.35 The value of X will be 1
