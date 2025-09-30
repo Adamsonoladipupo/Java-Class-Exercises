@@ -18,12 +18,16 @@ public class Nokia3310_2{
 			11-> Clock
 			12-> Alarm
 			13-> SIM services
+			0-> Exit
 		""";
 		System.out.println(nokia3310Menu);
 		
 		Scanner inputCollector = new Scanner(System.in);
 		int mainMenu = inputCollector.nextInt();
 
+		boolean exitMainmenu = true;
+
+		while (exitMainmenu){
 		switch(mainMenu) {
 			case 1 -> {
 				String phoneBookMenu = """
@@ -39,12 +43,16 @@ public class Nokia3310_2{
 					8-> Options
 					9-> Speed dials
 					10-> Voice tags
+					0-> Main Menu
 					
 				""";
 				System.out.print(phoneBookMenu);
 
 				int phoneBook = inputCollector.nextInt();
 				
+				boolean backToMainMenu = true;
+				
+				while (backToMainMenu){
 				switch(phoneBook){
 					case 1-> {System.out.print("Search");}
 					case 2-> {System.out.print("Services number");}
@@ -59,20 +67,27 @@ public class Nokia3310_2{
 							Select an option to proceed
 							1-> Type of view
 							2-> Memory Status
+							20-> Back to Phone book menu
 						""";
 						System.out.print(optionMenu);
 
+						boolean bactToPhoneBook = true;
+						while (bactToPhoneBook){
 						int options = inputCollector.nextInt();
 						switch(options){
 							case 1-> {System.out.print("Type of view");}
 							case 2-> {System.out.print("Memory statuc");}
+							case 20-> {bactToPhoneBook = false; }
 						}
 					} // end of optionMenu
+					} // end of bactToPhoneBook boolean
 					case 9-> {System.out.print("Speed dials");}
 					case 10-> {System.out.print("Voice tags");}
+					case 0-> {backToMainMenu = false;}
 				}
 				
 			} // end of phoneBookMenu
+			} // end of backToMainMenu
 			case 2 -> {
 				String messageMenu = """
 					Messages selected...
@@ -88,9 +103,12 @@ public class Nokia3310_2{
 					8-> Info service
 					9-> Voice mailbox number
 					10-> Service command editor
+					0-> Back to Main Menu
 				""";
 				System.out.print(messageMenu);
 
+				boolean backToMainMenu = true;
+				while (backToMainMenu){
 				int messages = inputCollector.nextInt();
 				switch(messages) {
 					case 1-> {System.out.print("Write message");}
@@ -152,9 +170,11 @@ public class Nokia3310_2{
 					case 8-> {System.out.print("Info service");}
 					case 9-> {System.out.print("Voice mailbox numbe");}
 					case 10-> {System.out.print("Service command editor");}
+					case 0-> {backToMainMenu = false;}
 				}
 
 			}
+			} // end of backToMainMenu
 			case 3 -> {System.out.print("Chat");}
 			case 4 -> {
 				String callRegisterMenu = """
@@ -388,8 +408,9 @@ public class Nokia3310_2{
 			} // end of clock menu
 			case 12 -> {System.out.print("Alarm");}
 			case 13 -> {System.out.print("SIM services");}
+			case 0-> {exitMainmenu = false;}
 
 		} // end of mainMenu
-
+		} // end of exitMainmenu
 	}// end of main method
 }// end of main class
