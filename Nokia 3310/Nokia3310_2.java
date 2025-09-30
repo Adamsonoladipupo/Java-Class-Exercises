@@ -20,10 +20,10 @@ public class Nokia3310_2{
 			13-> SIM services
 		""";
 		System.out.println(nokia3310Menu);
-		
+
 		Scanner inputCollector = new Scanner(System.in);
 		int mainMenu = inputCollector.nextInt();
-
+		
 		switch(mainMenu) {
 			case 1 -> {
 				String phoneBookMenu = """
@@ -39,11 +39,13 @@ public class Nokia3310_2{
 					8-> Options
 					9-> Speed dials
 					10-> Voice tags
+					0-> Back
 					
 				""";
 				System.out.print(phoneBookMenu);
 
 				int phoneBook = inputCollector.nextInt();
+				
 				
 				switch(phoneBook){
 					case 1-> {System.out.print("Search");}
@@ -59,6 +61,7 @@ public class Nokia3310_2{
 							Select an option to proceed
 							1-> Type of view
 							2-> Memory Status
+							0-> Back
 						""";
 						System.out.print(optionMenu);
 
@@ -66,13 +69,18 @@ public class Nokia3310_2{
 						switch(options){
 							case 1-> {System.out.print("Type of view");}
 							case 2-> {System.out.print("Memory statuc");}
+							case 0-> {
+								
+							}
 						}
 					} // end of optionMenu
 					case 9-> {System.out.print("Speed dials");}
 					case 10-> {System.out.print("Voice tags");}
+					case 0-> {;}
 				}
 				
 			} // end of phoneBookMenu
+
 			case 2 -> {
 				String messageMenu = """
 					Messages selected...
@@ -272,7 +280,7 @@ public class Nokia3310_2{
 			} // end of toneMenu
 			case 6 -> {
 				String settingsMenu = """
-					Call register selected...
+					Settings selected...
 					Select an option to proceed
 
 					1-> Call settings
