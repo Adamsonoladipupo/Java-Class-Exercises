@@ -19,12 +19,14 @@ public class Nokia3310TWO{
 			11-> Clock
 			12-> Alarm
 			13-> SIM services
+			0-> Exit
 		""";
 		System.out.println(nokia3310Menu);
 		
 		Scanner inputCollector = new Scanner(System.in);
 		int mainMenu = inputCollector.nextInt();
 		
+		while (mainMenu != 0){
 		switch(mainMenu) {
 			case 1 -> {
 				String phoneBookMenu = """
@@ -45,7 +47,7 @@ public class Nokia3310TWO{
 
 				int phoneBook = inputCollector.nextInt();
 				
-				
+				while (phoneBook == 11){
 				switch(phoneBook){
 					case 1-> {System.out.print("Search");}
 					case 2-> {System.out.print("Services number");}
@@ -72,9 +74,10 @@ public class Nokia3310TWO{
 					} // end of optionMenu
 					case 9-> {System.out.print("Speed dials");}
 					case 10-> {System.out.print("Voice tags");}
+					case 11-> {phoneBook = 11;}
 					default -> System.out.print("Invalid input \nMake a selection fron the options above");
 				}
-				
+			} // end of phone book while
 			} // end of phoneBookMenu
 			case 2 -> {
 				String messageMenu = """
@@ -404,8 +407,10 @@ public class Nokia3310TWO{
 			} // end of clock menu
 			case 12 -> {System.out.print("Alarm");}
 			case 13 -> {System.out.print("SIM services");}
-			default -> System.out.print("Invalid input \nMake a selection fron the options above");
+			case 0-> { mainMenu = 0;}
+			default -> {System.out.print("Invalid input \nMake a selection fron the options above");}
 
 		} // end of mainMenu
+		} // end of mainMenu loop
 	}// end of main method
 }// end of main class
