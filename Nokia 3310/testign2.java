@@ -1,23 +1,31 @@
 import java.util.Scanner;
 
-public class testign2{
+public class Testing2{
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
 
-		public static String sampleMethod( String select){
-			String select = input.nextLine();
+
+
+
+		
+
+		System.out.print(Math.sampleMethod());
+		
+	}
+
+		public static void sampleMethod(){
 			String docstring = """
 				Welcome!
 				Enter 1 to get started
 			""";
 			System.out.print(docstring);
-			String select = input.nextLine();
-			switch (select){
+			String sealect = input.nextLine();
+			switch (sealect){
 				case 1-> { System.out.print("Getting started ...");}
 			}
+			return sHolder;
 			
 		}
 
-		// System.out.print(sampleMethod);
-	}
+
 }

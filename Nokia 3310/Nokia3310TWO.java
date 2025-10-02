@@ -24,11 +24,11 @@ public class Nokia3310TWO{
 		System.out.println(nokia3310Menu);
 		
 		Scanner inputCollector = new Scanner(System.in);
-		int mainMenu = inputCollector.nextInt();
+		String mainMenu = inputCollector.nextLine();
 		
-		while (mainMenu != 0){
+		// if (mainMenu != 0){
 		switch(mainMenu) {
-			case 1 -> {
+			case "1" -> {
 				String phoneBookMenu = """
 					Phone book selected...
 					Select an option to proceed
@@ -47,7 +47,7 @@ public class Nokia3310TWO{
 
 				int phoneBook = inputCollector.nextInt();
 				
-				while (phoneBook == 11){
+				if (phoneBook >= 11){
 				switch(phoneBook){
 					case 1-> {System.out.print("Search");}
 					case 2-> {System.out.print("Services number");}
@@ -79,7 +79,7 @@ public class Nokia3310TWO{
 				}
 			} // end of phone book while
 			} // end of phoneBookMenu
-			case 2 -> {
+			case "2" -> {
 				String messageMenu = """
 					Messages selected...
 					Select an option to proceed
@@ -164,8 +164,8 @@ public class Nokia3310TWO{
 				}
 
 			}
-			case 3 -> {System.out.print("Chat");}
-			case 4 -> {
+			case "3" -> {System.out.print("Chat");}
+			case "4" -> {
 				String callRegisterMenu = """
 					Call register selected...
 					Select an option to proceed
@@ -253,7 +253,7 @@ public class Nokia3310TWO{
 					default -> System.out.print("Invalid input \nMake a selection fron the options above");
 				}
 			} // end of callRegisterMenu
-			case 5 -> {
+			case "5" -> {
 				String toneMenu = """
 					Tones selected...
 					Select an option to proceed
@@ -284,7 +284,7 @@ public class Nokia3310TWO{
 					default -> System.out.print("Invalid input \nMake a selection fron the options above");
 				}
 			} // end of toneMenu
-			case 6 -> {
+			case "6" -> {
 				String settingsMenu = """
 					Call register selected...
 					Select an option to proceed
@@ -293,7 +293,6 @@ public class Nokia3310TWO{
 					2-> Phone settings
 					3-> Security settings
 					4-> Restore factory settings
-					default -> System.out.print("Invalid input \nMake a selection fron the options above");
 				""";
 				System.out.print(settingsMenu);
 				
@@ -375,13 +374,13 @@ public class Nokia3310TWO{
 						}
 					} // end of security settings menu
 					case 4-> {System.out.print("Restore factory settings");}
-					default -> System.out.print("Invalid input \nMake a selection fron the options above");
+					default -> {System.out.print("Invalid input \nMake a selection fron the options above");}
 				}
 			} // end of settingsMenu
-			case 7 -> {System.out.print("Call divert");}
-			case 9 -> {System.out.print("Calculator");}
-			case 10 -> {System.out.print("Reminder");}
-			case 11 -> {
+			case "7" -> {System.out.print("Call divert");}
+			case "9" -> {System.out.print("Calculator");}
+			case "10" -> {System.out.print("Reminder");}
+			case "11" -> {
 				String clockMenu = """
 					Clock selected...
 					Select an option to proceed
@@ -405,12 +404,12 @@ public class Nokia3310TWO{
 					default -> System.out.print("Invalid input \nMake a selection fron the options above");
 				}
 			} // end of clock menu
-			case 12 -> {System.out.print("Alarm");}
-			case 13 -> {System.out.print("SIM services");}
-			case 0-> { mainMenu = 0;}
+			case "12" -> {System.out.print("Alarm");}
+			case "13" -> {System.out.print("SIM services");}
+			// case "0" -> { !mainMenu.equalsIgnoreCase(0);}
 			default -> {System.out.print("Invalid input \nMake a selection fron the options above");}
 
 		} // end of mainMenu
-		} // end of mainMenu loop
+		} // end of mainMenu if statement
 	}// end of main method
 }// end of main class
