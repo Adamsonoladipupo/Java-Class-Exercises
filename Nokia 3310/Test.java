@@ -4,7 +4,7 @@ public class Test{
 	public static void main(String[] args){
 		Scanner inputCollector = new Scanner(System.in);
 
-		public static String MainMenuMethod(){
+		// public static String MainMenuMethod( String mainMenuMenu){
 
 		String mainMenu = """
 			Welcome to main menu ...
@@ -18,9 +18,6 @@ public class Test{
 		""";
 		System.out.print(mainMenu);
 
-
-		boolean exitMainMenu = true;
-		// while (exitMainMenu){
 		int mainMenuMenu = inputCollector.nextInt();
 		switch (mainMenuMenu){
 			case 1-> {
@@ -34,8 +31,6 @@ public class Test{
 					0-> Exit
 				""";
 				System.out.print(docCall);
-
-				while (exitMainMenu){
 
 				int call = inputCollector.nextInt();
 				switch (call){
@@ -54,7 +49,6 @@ public class Test{
 						System.out.print(docContact);
 						
 					}
-					case 0-> { exitMainMenu = false; }
 					default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 				}
 				} // end of while loop
@@ -87,19 +81,18 @@ public class Test{
 						switch (theme){
 							case 1-> {System.out.print("Dark! Selected");}
 							case 2-> {System.out.print("Light! Selected");}
-							case 0-> { exitMainMenu = false; }
 							default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 						}
 					}
 					case 2-> {System.out.print("Notification");}
-					case 0-> { exitMainMenu = false; }
 					default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 				}
 			} //end of settings
-			case 0-> { exitMainMenu = false; }
 			default -> {System.out.println("Invalid Input, \nSelect from the options above");}
-			//} // end of exitMainmenu while loop
 		}// end of mainMenuMenu
+		//) // end of method MAinMenuMethod
+		
+		System.out.print("testing");
 		
 	}
 }

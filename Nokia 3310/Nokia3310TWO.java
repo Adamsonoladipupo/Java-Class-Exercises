@@ -18,17 +18,14 @@ public class Nokia3310TWO{
 			11-> Clock
 			12-> Alarm
 			13-> SIM services
-			0-> Exit
 		""";
 		System.out.println(nokia3310Menu);
 		
 		Scanner inputCollector = new Scanner(System.in);
-		String mainMenu = inputCollector.nextLine();
-
-		boolean exitSecondLevel = true;
-		while(exitSecondLevel){
+		int mainMenu = inputCollector.nextInt();
+		
 		switch(mainMenu) {
-			case "1" -> {
+			case 1 -> {
 				String phoneBookMenu = """
 					Phone book selected...
 					Select an option to proceed
@@ -42,14 +39,11 @@ public class Nokia3310TWO{
 					8-> Options
 					9-> Speed dials
 					10-> Voice tags
-					0-> Main Menu
-					
 				""";
 				System.out.print(phoneBookMenu);
 
 				int phoneBook = inputCollector.nextInt();
 				
-
 				switch(phoneBook){
 					case 1-> {System.out.print("Search");}
 					case 2-> {System.out.print("Services number");}
@@ -64,28 +58,21 @@ public class Nokia3310TWO{
 							Select an option to proceed
 							1-> Type of view
 							2-> Memory Status
-							20-> Back to Phone book menu
 						""";
 						System.out.print(optionMenu);
 
-						boolean bactToPhoneBook = true;
-						while (bactToPhoneBook){
 						int options = inputCollector.nextInt();
 						switch(options){
 							case 1-> {System.out.print("Type of view");}
 							case 2-> {System.out.print("Memory statuc");}
-							case 20-> {bactToPhoneBook = false; }
-							default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 						}
 					} // end of optionMenu
-					} // end of bactToPhoneBook boolean
 					case 9-> {System.out.print("Speed dials");}
 					case 10-> {System.out.print("Voice tags");}
-					default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 				}
 				
 			} // end of phoneBookMenu
-			case "2" -> {
+			case 2 -> {
 				String messageMenu = """
 					Messages selected...
 					Select an option to proceed
@@ -100,7 +87,6 @@ public class Nokia3310TWO{
 					8-> Info service
 					9-> Voice mailbox number
 					10-> Service command editor
-					0-> Back to Main Menu
 				""";
 				System.out.print(messageMenu);
 
@@ -140,7 +126,6 @@ public class Nokia3310TWO{
 									case 1-> {System.out.print("Message centre number");}
 									case 2-> {System.out.print("Message sent as");}
 									case 3-> {System.out.print("Message validity");}
-									default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 								}
 							} //end of set1Menu 
 							case 2-> {
@@ -159,7 +144,6 @@ public class Nokia3310TWO{
 									case 1-> {System.out.print("Delivery report");}
 									case 2-> {System.out.print("Reply via same centre");}
 									case 3-> {System.out.print("Character support");}
-									default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 								}
 							} //end of commonMenu 
 						}
@@ -167,12 +151,11 @@ public class Nokia3310TWO{
 					case 8-> {System.out.print("Info service");}
 					case 9-> {System.out.print("Voice mailbox numbe");}
 					case 10-> {System.out.print("Service command editor");}
-					default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 				}
 
 			}
-			case "3" -> {System.out.print("Chat");}
-			case "4" -> {
+			case 3 -> {System.out.print("Chat");}
+			case 4 -> {
 				String callRegisterMenu = """
 					Call register selected...
 					Select an option to proceed
@@ -214,8 +197,6 @@ public class Nokia3310TWO{
 							case 3-> {System.out.print("Received calls; duration");}
 							case 4-> {System.out.print("Dialled calls' duration");}
 							case 5-> {System.out.print("Clear timers");}
-							default -> {System.out.println("Invalid Input, \nSelect from the options above");}
-							
 						}
 
 					} //end of call duration menu
@@ -235,7 +216,6 @@ public class Nokia3310TWO{
 							case 1-> {System.out.print("Last call cost");}
 							case 2-> {System.out.print("All calls' cost");}
 							case 3-> {System.out.print("Clear counters");}
-							default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 						}
 
 					} // end of call cost menu
@@ -253,15 +233,13 @@ public class Nokia3310TWO{
 						switch(callCostSettings){
 							case 1-> {System.out.print("Call cost limit");}
 							case 2-> {System.out.print("Show call cost in");}
-							default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 						}
 
 					} // end of call cost settings menu
 					case 8-> {System.out.print("Prepaid credit");}
-					default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 				}
 			} // end of callRegisterMenu
-			case "5" -> {
+			case 5 -> {
 				String toneMenu = """
 					Tones selected...
 					Select an option to proceed
@@ -289,10 +267,9 @@ public class Nokia3310TWO{
 					case 7-> {System.out.print("Warning and game tones");}
 					case 8-> {System.out.print("Vibration alert");}
 					case 9-> {System.out.print("Screen saver");}
-					default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 				}
 			} // end of toneMenu
-			case "6" -> {
+			case 6 -> {
 				String settingsMenu = """
 					Call register selected...
 					Select an option to proceed
@@ -328,7 +305,6 @@ public class Nokia3310TWO{
 							case 4-> {System.out.print("Own number sending");}
 							case 5-> {System.out.print("Phone line in use");}
 							case 6-> {System.out.print("Automatic answer");}
-							default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 						}
 
 					} //end of call settings menu
@@ -354,7 +330,6 @@ public class Nokia3310TWO{
 							case 4-> {System.out.print("Network selection");}
 							case 5-> {System.out.print("Lights");}
 							case 6-> {System.out.print("Confirm SIM service action");}
-							default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 						}
 					} // end of phone Settings menu
 					case 3-> {
@@ -379,16 +354,15 @@ public class Nokia3310TWO{
 							case 4-> {System.out.print("Closed user group");}
 							case 5-> {System.out.print("Phone Security");}
 							case 6-> {System.out.print("Change access codes");}
-							default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 						}
 					} // end of security settings menu
 					case 4-> {System.out.print("Restore factory settings");}
 				}
 			} // end of settingsMenu
-			case "7" -> {System.out.print("Call divert");}
-			case "9" -> {System.out.print("Calculator");}
-			case "10" -> {System.out.print("Reminder");}
-			case "11" -> {
+			case 7 -> {System.out.print("Call divert");}
+			case 9 -> {System.out.print("Calculator");}
+			case 10 -> {System.out.print("Reminder");}
+			case 11 -> {
 				String clockMenu = """
 					Clock selected...
 					Select an option to proceed
@@ -409,16 +383,11 @@ public class Nokia3310TWO{
 					case 4-> {System.out.print("Stopwatch");}
 					case 5-> {System.out.print("Countdown timer");}
 					case 6-> {System.out.print("Auto update of date and time");}
-					default -> {System.out.println("Invalid Input, \nSelect from the options above");}
 				}
 			} // end of clock menu
-			case "12" -> {System.out.print("Alarm");}
-			case "13" -> {System.out.print("SIM services");}
-			case "0" -> {exitSecondLevel = false;}
-			case " " -> {exitSecondLevel = false;}
-			default -> {System.out.println("Invalid Input, \nSelect from the options above");}
+			case 12 -> {System.out.print("Alarm");}
+			case 13 -> {System.out.print("SIM services");}
 
 		} // end of mainMenu
-		} // end of exitSecondLevel
 	}// end of main method
 }// end of main class
