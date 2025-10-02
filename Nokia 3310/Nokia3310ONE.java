@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Nokia3310_1{
+public class Nokia3310ONE{
 	public static void main(String[] args){
 		String nokia3310Menu = """
 			Welcome! Select an option to get started
