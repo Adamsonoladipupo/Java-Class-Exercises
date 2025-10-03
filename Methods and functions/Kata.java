@@ -3,9 +3,22 @@ public class Kata{
 
 	}
 
-	/*public static boolean isPrime(int number){
-		
-	}*/
+	public static boolean isPrime(int number){
+		int factors = 0;
+		boolean isPrime ;
+
+		for (int count = 2; count < number; count++){
+			if (number % count == 0 ){
+				factors++;
+			}
+		}
+		if (factors > 0){isPrime = false;	
+		} else {isPrime = true;}
+
+		return isPrime;
+
+	}
+
 
 	public static int numberOfFactorsIn(int userInput){
 
