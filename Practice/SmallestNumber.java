@@ -8,7 +8,8 @@ public class SmallestNumber{
 		int B = input.nextInt();
 		int C = input.nextInt();
 
-		System.out.printf("Smallest number is: %d", SmallestNumber(A, B, C));
+		int Number = SmallestNumber(A, B, C);
+		System.out.printf("Smallest number is: %d", Number);
 	}
 	
 	// This is a function for findinf the samllest number
