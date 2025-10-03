@@ -6,12 +6,17 @@ public class KataTest{
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter a number: ");
 		int number = input.nextInt();
-
 		
-		//int result = Kata.numberOfFactorsIn(number);
-		boolean result = Kata.isPrime(number);
+		
+		// int result = Kata.numberOfFactorsIn(number);
+		// boolean result = Kata.isPrime(number);
+		// boolean result = Kata.isOdd(number);
 		
 		// System.out.printf("There are %d factors", result);
-		System.out.print(result);
+		// System.out.print(result);
+		// System.out.print(result);
+
+
+		// System.out.print(isOdd);
 	}
 }

@@ -32,4 +32,13 @@ public class Kata{
 		
 		return numberOfFactors;
 	}
+
+	public static boolean isOdd(int number){
+		boolean isOdd;
+		if (number % 2 == 0){
+			isOdd = false;
+		} else {isOdd = true;}
+
+		return isOdd;
+	}
 }
