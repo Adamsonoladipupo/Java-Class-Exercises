@@ -57,5 +57,11 @@ public class Kata{
 
 		return isLeapYear;
 	}
+
+	public static double fahrenheitToCelsius(double number){
+		
+		double toCelsius = (5 * (number - 32))/9;
+		return toCelsius ;
+	}
 }
 
