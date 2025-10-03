@@ -41,4 +41,21 @@ public class Kata{
 
 		return isOdd;
 	}
+	public static boolean isLeapYear(int number){
+		boolean isLeapYear;
+		if (number % 4 == 0 && number % 100 != 0){
+			isLeapYear = true;
+		}
+		else if(number % 4 == 0 && number % 100 == 0 && number % 400 == 0){
+			isLeapYear = true;
+		}
+		else if(number % 4 == 0 && number % 100 == 0 && number % 400 != 0){
+			isLeapYear = false;
+		}
+		else {isLeapYear = false;}
+		
+
+		return isLeapYear;
+	}
 }
+
