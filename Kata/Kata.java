@@ -75,5 +75,12 @@ public class Kata{
 
 		return isEven;
 	}
+
+	public static double divide(double number1, double number2){
+		double quotient = number1 / number2;
+		return quotient;
+	}
+
+
 }
 
