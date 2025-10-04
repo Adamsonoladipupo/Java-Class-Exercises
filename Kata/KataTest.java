@@ -5,11 +5,12 @@ public class KataTest{
 
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter a number 1: ");
-		int number = input.nextInt();
+		int number1 = input.nextInt();
+		System.out.print("Enter a number 1: ");
+		int number2 = input.nextInt();
 		
 		
-		
-		boolean result = Kata.isSquare(number);
+		int result = Kata.subtract(number1, number2);
 
 		
 		System.out.print(result);

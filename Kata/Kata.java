@@ -81,14 +81,10 @@ public class Kata{
 		return quotient;
 	}
 
-	public static double removeNegative(double number){
-		double removeNegative = -1 * number;
-		return removeNegative;
-	}
 
-	public static double subtract(double number1, double number2){
-		double subtractResult  = number1 - number2;
-		double result = removeNegative(subtractResult);
+	public static int subtract(int number1, int number2){
+		int subtractResult  = number1 - number2;
+		int result = Math.abs(subtractResult);
 		return result;
 	}
 	
