@@ -5,17 +5,14 @@ public class KataTest{
 
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter a number 1: ");
-		long number = input.nextLong();
-
+		int number = input.nextInt();
 		
 		
-		long result = Kata.squareOf(number);
+		
+		boolean result = Kata.isSquare(number);
 
 		
 		System.out.print(result);
 
-
-
-		//System.out.print(quotient);
 	}
 }

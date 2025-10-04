@@ -106,6 +106,18 @@ public class Kata{
 		return square;
 	}
 
+	public static boolean isSquare(int number){
+		boolean isSquare;
+		double squareRoot = Math.sqrt(number);
+		if (squareRoot % 1 == 0){
+			isSquare = true;
+		}else{isSquare = false;}
+		
+		return isSquare;
+	}
+
+
+
 
 }
 
