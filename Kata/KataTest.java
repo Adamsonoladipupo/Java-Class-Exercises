@@ -16,7 +16,7 @@ public class KataTest{
 
 		
 		
-		double result = Kata.divide(number1, number2);
+		double result = Kata.subtract(number1, number2);
 
 		
 		System.out.print(result);

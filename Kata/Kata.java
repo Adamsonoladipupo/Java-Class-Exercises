@@ -81,6 +81,17 @@ public class Kata{
 		return quotient;
 	}
 
+	public static double removeNegative(double number){
+		double removeNegative = -1 * number;
+		return removeNegative;
+	}
+
+	public static double subtract(double number1, double number2){
+		double subtractResult  = number1 - number2;
+		double result = removeNegative(subtractResult);
+		return result;
+	}
+
 
 }
 
