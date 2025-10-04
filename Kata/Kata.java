@@ -91,6 +91,20 @@ public class Kata{
 		double result = removeNegative(subtractResult);
 		return result;
 	}
+	
+	public static long factorialOf(long number){
+		long factorial = 1;
+		for (int count = 1; count <= number; count++){
+			factorial = factorial * count;
+		}
+		
+		return factorial;
+	}
+	
+	public static long squareOf(long number){
+		long square = number * number;
+		return square;
+	}
 
 
 }

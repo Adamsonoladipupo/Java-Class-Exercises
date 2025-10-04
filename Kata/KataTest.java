@@ -5,18 +5,11 @@ public class KataTest{
 
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter a number 1: ");
-		double number1 = input.nextDouble();
-
-		System.out.print("Enter a number 2: ");
-		double number2 = input.nextDouble();
-
-		 
-
-
+		long number = input.nextLong();
 
 		
 		
-		double result = Kata.subtract(number1, number2);
+		long result = Kata.squareOf(number);
 
 		
 		System.out.print(result);
