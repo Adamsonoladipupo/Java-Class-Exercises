@@ -1,21 +1,22 @@
 import java.util.Scanner;
 
-public class ExponentialSequence{
+public class factorialE{
 	public static void main(String[] args){
 
 		System.out.println("Welcome! This app helps you find the ExponentialSequence of numbers");
 
 		Scanner inputCollector = new Scanner(System.in);
 		System.out.print("Enter a number: ");
-		int userInput = inputCollector.nextInt();
+		double userInput = inputCollector.nextDouble();
 
-		int count = 0;
-		int factorial = 1;
+		double count = 0;
+		double factorial = 1;
 		double exponentialS = 1;
-		for (count = 1; count < userInput; count++){
+		for (count = 1; count <= userInput; count++){
 			factorial = count * factorial;
-			exponentialS = exponentialS + 1/factorial;
-			System.out.println(exponentialS);
+			exponentialS = exponentialS + (1/factorial);
+			
 		}
+		System.out.printf("the value is: %.4f", exponentialS);
 	}
 }
