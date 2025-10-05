@@ -1,4 +1,4 @@
-public class exercise_5_9_D{
+public class NoCodeAnswerDocstring{
 	public static void main(String[] args){
 
 		String docstrings = """

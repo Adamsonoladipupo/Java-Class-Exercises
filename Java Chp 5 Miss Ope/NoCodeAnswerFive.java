@@ -1,4 +1,4 @@
-public class Exercise_5_9_A{
+public class NoCodeAnswerFive{
 	public static void main(String[] args){
 
 

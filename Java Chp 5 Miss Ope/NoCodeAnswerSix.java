@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercise_5_10{
+public class NoCodeAnswerSix{
 	public static void main(String[] args){
 	
 		String docstrings = """

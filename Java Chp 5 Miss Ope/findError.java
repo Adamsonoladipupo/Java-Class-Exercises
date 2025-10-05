@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exercise_5_9_B{
+public class findError{
 	public static void main(String[] args){
 
 
