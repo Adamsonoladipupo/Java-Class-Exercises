@@ -64,9 +64,6 @@ public class Kata{
 		return toCelsius ;
 	}
 
-	public static void printStar(int numberOfRow){
-
-	}
 	public static boolean isEven(int number){
 		boolean isEven;
 		if (number % 2 == 0){
@@ -110,6 +107,26 @@ public class Kata{
 		}else{isSquare = false;}
 		
 		return isSquare;
+	}
+	
+	public static boolean palindrome(int number){
+
+		int initialUserInput = number;
+		int palindrome = 0;
+		int palindromes = 0;
+		int newPalindromes = 0;
+		for(int count = 5; count >= 1; count--){
+			palindrome = number % 10;
+			number = number / 10;
+			palindromes = (int)Math.pow(10, count-1) * palindrome;
+			newPalindromes = newPalindromes + palindromes;
+		}
+		boolean check;
+		if (initialUserInput == newPalindromes){
+			check = true;
+		}else {check = false;}
+		
+		return check;
 	}
 
 
