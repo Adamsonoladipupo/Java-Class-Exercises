@@ -2,7 +2,12 @@ import java.util.Scanner;
 
 public class Nokia3310TWO{
 	public static void main(String[] args){
+		MainMenuF();
+	}// end of main method
+
+	public static void MainMenuF(){
 		String nokia3310Menu = """
+
 			Welcome! Select an option to get started
 			
 			1-> Phone book
@@ -18,6 +23,8 @@ public class Nokia3310TWO{
 			11-> Clock
 			12-> Alarm
 			13-> SIM services
+			0-> Exit
+			
 		""";
 		System.out.println(nokia3310Menu);
 		
@@ -37,9 +44,17 @@ public class Nokia3310TWO{
 			case 11 -> { clockF(); }
 			case 12 -> {System.out.print("Alarm");}
 			case 13 -> {System.out.print("SIM services");}
+			case 0 -> {System.out.print("Thank You For Banking With Us");}
+			default -> {
+				System.out.println("Invalid input, make a selection from the option belows");
+				MainMenuF();
+		
+			}
+
 
 		} // end of mainMenu
-	}// end of main method
+
+	}
 	public static void phoneBookMenu(){
 		Scanner inputCollector = new Scanner(System.in);
 		String docPBM = """
@@ -54,9 +69,10 @@ public class Nokia3310TWO{
 		5-> Edit
 		6-> Assign tone
 		7-> Send b'card
-		8-> SOptions
+		8-> Options
 		9-> Speed dials
 		10-> Voice tags
+		22-> Back
 		""";
 		System.out.print(docPBM);
 		int phoneBookMenuF = inputCollector.nextInt();
@@ -68,12 +84,22 @@ public class Nokia3310TWO{
 			case 5-> {System.out.print("Edit");}
 			case 6-> {System.out.print("Assign tone");}
 			case 7-> {System.out.print("Send b'card");}
-			case 8-> {
+			case 8-> {optionMenuF();}
+			case 9-> {System.out.print("Speed dials");}
+			case 10-> {System.out.print("Voice tags");}
+			case 22-> { MainMenuF();}
+		}
+	}
+
+	public static void optionMenuF(){
+		Scanner inputCollector = new Scanner(System.in);
+
 				String optionMenu = """
 					Options selected...
 					Select an option to proceed
 					1-> Type of view
 					2-> Memory Status
+					22-> Back 
 				""";
 				System.out.print(optionMenu);
 
@@ -81,11 +107,9 @@ public class Nokia3310TWO{
 				switch(options){
 					case 1-> {System.out.print("Type of view");}
 					case 2-> {System.out.print("Memory statuc");}
+					case 22-> {phoneBookMenu();}
 				}
-			} // end of optionMenu
-			case 9-> {System.out.print("Speed dials");}
-			case 10-> {System.out.print("Voice tags");}
-		}
+
 	}
 
 	public static void MessagesF(){
@@ -104,6 +128,7 @@ public class Nokia3310TWO{
 			8-> Info service
 			9-> Voice mailbox number
 			10-> Service command editor
+			22-> Back
 		""";
 		System.out.print(messageMenu);
 
@@ -115,7 +140,17 @@ public class Nokia3310TWO{
 			case 4-> {System.out.print("Picture messages");}
 			case 5-> {System.out.print("Template");}
 			case 6-> {System.out.print("Smileys");}
-			case 7-> {
+			case 7-> { messageSettingMenuF();}
+			case 8-> {System.out.print("Info service");}
+			case 9-> {System.out.print("Voice mailbox numbe");}
+			case 10-> {System.out.print("Service command editor");}
+			case 22-> {MainMenuF();}
+		}
+	}
+
+	public static void messageSettingMenuF(){
+		Scanner inputCollector = new Scanner(System.in);
+
 				String messageSettingMenu = """
 					Message settings selected...
 					Select an option to proceed
@@ -164,12 +199,9 @@ public class Nokia3310TWO{
 						}
 					} //end of commonMenu 
 				}
-			} //end of messageSettingMenu
-			case 8-> {System.out.print("Info service");}
-			case 9-> {System.out.print("Voice mailbox numbe");}
-			case 10-> {System.out.print("Service command editor");}
-		}
+
 	}
+
 
 	public static void callRegisterF(){
 		Scanner inputCollector = new Scanner(System.in);
