@@ -12,13 +12,24 @@ public class pizzaWahala{
 	String docPizzaType = """
 
 	Welcome to Pizza Wahala Joint!
-	Select a pizza type.
+	
+	_________________________________________________  
+	| Pizza Type  | Number of slices | price per box |
+	-------------------------------------------------
+	| Sapa size   | 4		 | 2,500	 |
+	-------------------------------------------------
+	| Small Money | 6		 | 2,900	 |
+	-------------------------------------------------
+	| Big boys    | 8		 | 4,000	 |
+	-------------------------------------------------
+	| Odogwu      | 12		 | 5,200	 |
+	-------------------------------------------------
 
+	Select a pizza type.
 	1-> Sapa size
 	2-> Small money
 	3-> Big boys
 	4-> Odogwu
-	0-> Exit
 	
 	""";
 	System.out.print(docPizzaType);
@@ -30,6 +41,7 @@ public class pizzaWahala{
 		case "4"-> { printOdowu();}
 		default -> {
 			System.out.print("Invalid input, select from the options");
+			printPizzaType();
 		}
 	}
 		
@@ -52,6 +64,7 @@ public class pizzaWahala{
 	double box = guest / 4;
 	if (box % 1 != 0){
 		box = box + 1;
+		box = (int)box;
 	}
 	double totalCost = box * 2500;
 	double leftOver = (box * 4) - guest;
@@ -78,6 +91,7 @@ public class pizzaWahala{
 	double box = guest / 6;
 	if (box % 1 != 0){
 		box = box + 1;
+		box = (int)box;
 	}
 	double totalCost = box * 2900;
 	double leftOver = (box * 6) - guest;
@@ -105,6 +119,7 @@ public class pizzaWahala{
 	double box = guest / 8;
 	if (box % 1 != 0){
 		box = box + 1;
+		box = (int)box;
 	}
 	double totalCost = box * 4000;
 	double leftOver = (box * 8) - guest;
@@ -131,6 +146,7 @@ public class pizzaWahala{
 	double box = guest / 12;
 	if (box % 1 != 0){
 		box = box + 1;
+		box = (int)box;
 	}
 	double totalCost = box * 5200;
 	double leftOver = (box * 12) - guest;
