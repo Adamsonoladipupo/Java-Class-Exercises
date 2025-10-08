@@ -22,4 +22,15 @@ public class morningCupCakes{
 
 		return result;
 	}
+
+	public static int countOccurence(int[] integers){
+		int occurence = 0;
+		for (int count = 1; count < integers.length; count++){
+			//System.out.println(integers[count]);
+			if (integers[count] == integers[1]){
+				occurence++;
+			}
+		}
+		return occurence;
+	}
 }
