@@ -13,17 +13,17 @@ public class pizzaWahala{
 
 	Welcome to Pizza Wahala Joint!
 	
-	_________________________________________________  
+	 ________________________________________________  
 	| Pizza Type  | Number of slices | price per box |
-	-------------------------------------------------
+	 ------------------------------------------------
 	| Sapa size   | 4		 | 2,500	 |
-	-------------------------------------------------
+	 ------------------------------------------------
 	| Small Money | 6		 | 2,900	 |
-	-------------------------------------------------
+	 ------------------------------------------------
 	| Big boys    | 8		 | 4,000	 |
-	-------------------------------------------------
+	 ------------------------------------------------
 	| Odogwu      | 12		 | 5,200	 |
-	-------------------------------------------------
+	 ------------------------------------------------
 
 	Select a pizza type.
 	1-> Sapa size
@@ -107,7 +107,7 @@ public class pizzaWahala{
 
 	String docSapaSize = """
 
-	Sapa size Selected ...
+	Big Boys size Selected ...
 	Cost: $4,000 per box (8 slices)
 
 	How many guest are you inviting?
@@ -134,7 +134,7 @@ public class pizzaWahala{
 
 	String docSapaSize = """
 
-	Sapa size Selected ...
+	Odogwu size Selected ...
 	Cost: $5,200 per box (12 slices)
 
 	How many guest are you inviting?
