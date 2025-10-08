@@ -3,24 +3,25 @@ import java.util.Scanner;
 public class morningCupCakesTest{
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
+		System.out.print("Enter the number to be checked: ");
+		int number = input.nextInt();
 
-		int[] integers = {2, 1, 3, 1, 4, 5, 7,1,1, 3, 9, 3,1};
-		int smallest = morningCupCakes.countOccurence(integers);
-		System.out.print(smallest);
+		int[] integers = {1,2,3,4,5,22,11,45,80};
+		boolean result = morningCupCakes.containsElement(number,integers);
+		System.out.print(result);
 
 		/*
-		int occurence = 0;
+		boolean check = false;
 		for (int count = 1; count < integers.length; count++){
 			//System.out.println(integers[count]);
-			if (integers[count] == integers[1]){
-				occurence++;
-			}
+			if (number == integers[count]){
+				check = true;
+			}else{check = false;}
 		}
-		System.out.printf("%d occure %d times",integers[1], occurence );
+		System.out.print(check);
 
+		
 		*/
-		
-		
 
  		
 

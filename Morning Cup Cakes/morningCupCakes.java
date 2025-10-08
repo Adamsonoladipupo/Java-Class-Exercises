@@ -6,7 +6,6 @@ public class morningCupCakes{
 	public static int isSmallest(int[] integers){
 		int smallest = integers[0];
 		for (int count = 1; count < integers.length; count++){
-			//System.out.println(integers[count]);
 			if (integers[0] > integers[count]){
 				smallest = integers[count];
 			}
@@ -25,12 +24,21 @@ public class morningCupCakes{
 
 	public static int countOccurence(int[] integers){
 		int occurence = 0;
-		for (int count = 1; count < integers.length; count++){
-			//System.out.println(integers[count]);
+		for (int count = 0; count < integers.length; count++){
 			if (integers[count] == integers[1]){
 				occurence++;
 			}
 		}
 		return occurence;
+	}
+
+	public static boolean containsElement(int number, int[] integers){
+		boolean check = false;
+		for (int count = 0; count < integers.length; count++){
+			if (number == integers[count]){
+				check = true;
+			}
+		}
+		return check;
 	}
 }
