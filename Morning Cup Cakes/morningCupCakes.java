@@ -64,4 +64,13 @@ public class morningCupCakes{
 		
 	}
 
+	public static int getMiddleElement(int[] integer){
+		if (integer.length % 2 != 0){
+			return integer[integer.length/2];
+		} else {
+			return integer[integer.length/2 + 1];
+		}
+		//return integer[];
+	}
+
 }
