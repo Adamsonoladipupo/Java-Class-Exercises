@@ -41,4 +41,27 @@ public class morningCupCakes{
 		}
 		return check;
 	}
+
+	public static int getFirstElement(int[] integers){
+		int result = 0;
+		if (integers.length > 0){
+			result = integers[0];			
+		} else{	
+			result = integers[];
+		}
+		return result;
+		
+	}
+
+	public static int getLastElement(int[] integers){
+		int result = 0;
+		if (integers.length > 0){
+			result = integers[integers.length-1];			
+		} else{	
+			result = integers[];
+		}
+		return result;
+		
+	}
+
 }
