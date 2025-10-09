@@ -2,7 +2,6 @@ public class morningCupCakes{
 	public static void main(String[] args){
 		
 	}
-
 	public static int isSmallest(int[] integers){
 		int smallest = integers[0];
 		for (int count = 1; count < integers.length; count++){
@@ -46,8 +45,6 @@ public class morningCupCakes{
 		int result = 0;
 		if (integers.length > 0){
 			result = integers[0];			
-		} else{	
-			result = integers[];
 		}
 		return result;
 		
@@ -57,8 +54,6 @@ public class morningCupCakes{
 		int result = 0;
 		if (integers.length > 0){
 			result = integers[integers.length-1];			
-		} else{	
-			result = integers[];
 		}
 		return result;
 		
@@ -71,6 +66,21 @@ public class morningCupCakes{
 			return integer[integer.length/2 + 1];
 		}
 		//return integer[];
+	}
+
+
+	public static int swapFirstAndLast(int[] integer){
+		int tempVariable = 0;
+		tempVariable = integer[0];
+		integer[0] = integer[integer.length - 1];
+		integer[integer.length - 1] = tempVariable;
+		int count = 0;
+		
+		int swapped = 0;
+		for (count = 0; count < integer.length; count++){
+			swapped = integer[count];
+		}
+		return swapped;
 	}
 
 }
