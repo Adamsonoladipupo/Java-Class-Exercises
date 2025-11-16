@@ -18,7 +18,7 @@ public class Problem{
 	}
 	
 	public void setProblemName(String problemName){
-		name = problemName;
+		this.name = problemName;
 	}
 
 	public String getProblemName(){
@@ -28,5 +28,6 @@ public class Problem{
 	public String getProblemType(){
 		return type;
 	}
+
 
 }

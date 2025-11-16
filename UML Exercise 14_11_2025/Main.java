@@ -7,19 +7,19 @@ public class Main{
 
 		Problem problemOne = new Problem("Sapa", "Financial");
 
-		System.out.println(problemOne.getProblemName);
+		System.out.println("Problem name: " + problemOne.getProblemName() + " | Problem type : " + problemOne.getProblemType());
 		
-		//System.out.print("Change problem Name: ");
-		//String userInput = inputCollector.nextLine();
-		//problemOne.setProblemName(userInput);
+		System.out.print("Change problem Name: ");
+		String userInput = inputCollector.nextLine();
+		problemOne.setProblemName(userInput);
 
-		//System.out.println("Problem name: " + problemOne.getProblemName + " | Problem type : " + problemOne.getProblemType);
+		System.out.println("Problem name: " + problemOne.getProblemName() + " | Problem type : " + problemOne.getProblemType());
 
 
-		//Person personOne = new Person();
+		Person personOne = new Person();
 
-		//personOne.setProblem(problemOne);
+		personOne.setProblem(problemOne);
 
-		//System.out.println("Person 1 : " + personOne.getPersonProblems());
+		System.out.println("Person 1 : " + personOne.getPersonProblems());
 	}
 }
