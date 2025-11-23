@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Person{
 	private String name;
-	private ArrayList<Problem> problemList = new ArrayList<>();
+	private ArrayList<String> problemList = new ArrayList<>();
 
 /*
 	Person(ArrayList<Problem> problemInput){
@@ -14,7 +14,7 @@ public class Person{
 	}
 */
 
-	public ArrayList<Problem> getPersonProblems(){
+	public ArrayList<String> getPersonProblems(){
 		return problemList;
 	}
 
