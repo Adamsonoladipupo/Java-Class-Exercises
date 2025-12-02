@@ -1,28 +1,42 @@
 package dsa;
 
+import java.util.NoSuchElementException;
+
 public class MyQueueV2 {
     private int count = 0;
-    private Object[] queueItems = new Object[3];
+    private Object[] queueList = new Object[5];
 
     public boolean isEmpty() {
         return count == 0;
     }
 
     public boolean add(Object element) {
-        if ( count >= queueItems.length ){
+        if ( queueList.length == 0){
             throw new IllegalStateException ("no space currently available");
         }
         else {
-            queueItems[count] = element;
-            count++;
+            for (int check = 0; check < queueList.length; check++){
+                if (queueList[check] == null){
+                    queueList[check] = element;
+                    count++;
+                }
+            }
             return true;
         }
     }
 
     public Object remove() {
-        Object removedObject = queueItems[0];
-        queueItems[0] = null;
-        count--;
+//        if(queueList.length == count){
+//            throw new NoSuchElementException("this queue is empty");
+//        }
+        Object removedObject = null;
+        for (int check = 0; check < queueList.length; check++){
+            if (queueList[check] != null){
+                removedObject = queueList[check];
+                queueList[0] = null;
+                count--;
+            }
+        }
         return removedObject;
     }
 
@@ -31,8 +45,8 @@ public class MyQueueV2 {
             return null;
         }
         else {
-            Object removedObject = queueItems[0];
-            queueItems[0] = null;
+            Object removedObject = queueList[0];
+            queueList[0] = null;
             count--;
             return removedObject;
         }
@@ -43,7 +57,7 @@ public class MyQueueV2 {
             return null;
         }
         else {
-            return queueItems[0];
+            return queueList[0];
         }
     }
 }

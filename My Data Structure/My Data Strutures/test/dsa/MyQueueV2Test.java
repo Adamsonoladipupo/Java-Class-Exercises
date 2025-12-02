@@ -26,7 +26,8 @@ public class MyQueueV2Test {
         newQueue.add("Balloon");
         newQueue.add("Ball");
         newQueue.add("Banana");
-        assertEquals("Balloon" , newQueue.remove());
+        newQueue.remove();
+        assertEquals("Ball" , newQueue.remove());
 
     }
 
@@ -53,7 +54,7 @@ public class MyQueueV2Test {
     }
 
     @Test
-    void trst_that_item_can_be_retrived_from_my_queue(){
+    void test_that_item_can_be_retrived_from_my_queue(){
         MyQueueV2 newQueue = new MyQueueV2();
         newQueue.add("Bola");
         newQueue.add("Ball");
