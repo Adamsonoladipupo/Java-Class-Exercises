@@ -9,13 +9,26 @@ public class Account {
     }
 
     public void deposit(int amount) {
-        if (amount < 0){throw new IllegalArgumentException("Invalid ammount");}
+        validateNegativeInput(amount);
         accountBalance += amount;
     }
 
+
     public void withdraw(int amount) {
-        if (amount > accountBalance) throw new IllegalArgumentException("Insufficient funds");
-        if (amount < 0) throw new IllegalArgumentException("Invalid amount");
+        validateNegativeInput(amount);
+        ValidateLowerThanaccountBalance(amount);
         accountBalance -= amount;
+    }
+
+    // helper methods for validating user input
+    public void validateNegativeInput(int amount){
+        if (amount < 0){
+            throw new IllegalArgumentException("Invalid amount");
+        }
+    }
+    public void ValidateLowerThanaccountBalance(int amount){
+        if (amount > accountBalance) {
+            throw new IllegalArgumentException("Insufficient funds");
+        }
     }
 }
