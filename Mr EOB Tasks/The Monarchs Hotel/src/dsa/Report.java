@@ -1,7 +1,7 @@
 package dsa;
 
 public class Report {
-    private boolean underMaintenance;
+    private int numberOfBookedRooms;
     private String roomName;
 
 }

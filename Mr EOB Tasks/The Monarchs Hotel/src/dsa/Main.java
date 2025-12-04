@@ -7,7 +7,6 @@ public class Main {
         ArrayList <Room> allRooms = new ArrayList<>();
         ArrayList <Guests> allGuests = new ArrayList<>();
 
-
         PrintMenuMethods.firstMenu();
         System.out.print("Enter your name: ");
         String admin = input.nextLine();
