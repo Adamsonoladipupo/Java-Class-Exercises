@@ -2,16 +2,23 @@ package dsa;
 
 public class Admin {
     private String name;
-    private static String pin;
+    private String pin;
 
-    Admin (){
-        this.name = "Madam Eniife";
-        this.pin = "1234";
+
+    Admin (String name, String pin){
+        this.name = name;
+        this.pin = pin;
     }
 
-    public static String getPin(){
+
+    public String getName(){
+        return name;
+    }
+
+    public String getPin(){
         return pin;
     }
+
 
 
 

@@ -5,21 +5,23 @@ public class Guests {
     private String email;
     private String phoneNumber;
     private String occupiedRoom;
+    private String PIN;
     private Object[] guestList = new Object[10];
     private int count = 0;
 
     Guests (){
-        this.occupiedRoom = null;
+        this.PIN= null;
         this.name = null;
         this.email = null;
         this.phoneNumber = null;
+
     }
 
-    Guests(String name, String email, String phoneNumber, String occupiedRoom){
+    Guests(String name, String email, String phoneNumber, String PIN){
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        this.occupiedRoom = occupiedRoom;
+        this.PIN = PIN;
     }
 
 

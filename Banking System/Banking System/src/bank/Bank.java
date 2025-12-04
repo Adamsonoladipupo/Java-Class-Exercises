@@ -8,6 +8,4 @@ public class Bank {
     }
 
     public void createAccount(String name, int accountNumber, String password) {
-        accounts++;
-    }
-}
+        accounts++\}
