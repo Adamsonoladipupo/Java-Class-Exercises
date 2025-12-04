@@ -24,7 +24,7 @@ public class GuestTest {
     @Test
     public void test_if_guest_list_is_not_empty(){
         assertTrue(newGuest.isEmpty());
-        newGuest.addGuest("Adams", "adamson@gmail.com", "08166666666", "001");
+        newGuest.addGuest("Adams", "adamson@gmail.com", "08166666666", "001", "1234");
         assertFalse(newGuest.isEmpty());
         assertEquals( 1,newGuest.size());
     }
@@ -32,19 +32,19 @@ public class GuestTest {
     @Test
     public void test_if_user_as_a_name(){
         newGuest.setName("Adams");
-        assertEquals( "Adams", newGuest.getName());
+        assertEquals( "Adams", newGuest.getGuestName());
     }
 
     @Test
     public void test_if_user_as_a_email(){
         newGuest.setEmail("Adams@gmail.com");
-        assertEquals( "Adams@gmail.com", newGuest.getEmail());
+        assertEquals( "Adams@gmail.com", newGuest.getGuestEmail());
     }
 
     @Test
     public void test_if_user_as_a_phone_number(){
         newGuest.setPhoneNumber("081266666666");
-        assertEquals( "081266666666", newGuest.getPhoneNumber());
+        assertEquals( "081266666666", newGuest.getGuestPhoneNumber());
     }
 
 

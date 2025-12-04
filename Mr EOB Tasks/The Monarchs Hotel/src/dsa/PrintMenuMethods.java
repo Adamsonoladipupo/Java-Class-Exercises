@@ -1,13 +1,18 @@
 package dsa;
 
+import java.util.ArrayList;
+
 public class PrintMenuMethods {
 
     public static void firstMenu(){
         String message = """
 
                 ==> I AM MONARCH HOTEL 0.1 <==
-
-                => Enter your NAME and PIN for full access.
+                
+                I have been created to ease your 
+                hotel management process . . .
+                
+                => Enter your NAME and PIN to own me.
                 """;
         System.out.print(message);
     }
@@ -97,6 +102,30 @@ public class PrintMenuMethods {
                 
                 """;
 
+    }
+    
+    public static void allAvailableRooms(ArrayList<Room> allRooms){
+        System.out.println("All ROOMs");
+        for (Room room : allRooms){
+            System.out.println("-----------------------------------------");
+            System.out.println("Room Number: " + room.getNumber());
+            System.out.println("Room Type: " + room.getRoomType());
+            System.out.println("Room Price: ₦" + room.getRoomPrice());
+            System.out.println("Room is Empty: " + room.getRoomEmptyStatus());
+            System.out.println("Room under maintenance: " + room.getRoomMaintenanceStatus());
+            System.out.println("-----------------------------------------");
+        }
+    }
+
+    public static void allAvailableGuests(ArrayList<Guests> allGuests){
+        System.out.println("All ROOMs");
+        for (Guests guest : allGuests){
+            System.out.println("-----------------------------------------");
+            System.out.println("Guest Name: " + guest.getGuestName());
+            System.out.println("Guest Phone Number: " + guest.getGuestPhoneNumber());
+            System.out.println("Room Email: " + guest.getGuestEmail());
+            System.out.println("-----------------------------------------");
+        }
     }
 
 

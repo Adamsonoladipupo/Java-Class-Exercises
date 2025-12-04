@@ -6,7 +6,7 @@ public class Guests {
     private String phoneNumber;
     private String occupiedRoom;
     private String PIN;
-    private Object[] guestList = new Object[10];
+    private Object[] newGuest = new Object[5];
     private int count = 0;
 
     Guests (){
@@ -17,10 +17,11 @@ public class Guests {
 
     }
 
-    Guests(String name, String email, String phoneNumber, String PIN){
+    Guests(String name, String email, String phoneNumber, String occupiedRoom, String PIN){
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
+        this.occupiedRoom = occupiedRoom;
         this.PIN = PIN;
     }
 
@@ -33,13 +34,13 @@ public class Guests {
         return count;
     }
 
-    public void addGuest(String name, String mail, String number, String roomNumber) {
-        Guests userOne = new Guests(name, mail, phoneNumber, roomNumber);
-        guestList[count] = userOne;
+    public void addGuest(String name, String mail, String number, String roomNumber, String pin) {
+        Guests userOne = new Guests(name, mail, phoneNumber, roomNumber, pin);
+        newGuest[count] = userOne;
         count++;
     }
 
-    public String getName() {
+    public String getGuestName() {
         return name;
     }
 
@@ -48,15 +49,11 @@ public class Guests {
         this.name = name;
     }
 
-    public String getEmail() {
+    public String getGuestEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhoneNumber() {
+    public String getGuestPhoneNumber() {
         return phoneNumber;
     }
 
@@ -64,11 +61,15 @@ public class Guests {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getOccupiedRoom() {
+    public String getGuestOccupiedRoom() {
         return occupiedRoom;
     }
 
     public void setOccupiedRoom(String occupiedRoom) {
         this.occupiedRoom = occupiedRoom;
+    }
+
+    public void setEmail(String mail) {
+        this.email = mail;
     }
 }

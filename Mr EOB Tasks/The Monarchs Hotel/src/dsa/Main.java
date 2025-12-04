@@ -4,7 +4,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        ArrayList <Object> allRooms = new ArrayList<>();
+        ArrayList <Room> allRooms = new ArrayList<>();
+        ArrayList <Guests> allGuests = new ArrayList<>();
 
 
         PrintMenuMethods.firstMenu();
@@ -37,22 +38,39 @@ public class Main {
                         switch (adminInput){
                             case "1" ->{
                                 if(allRooms.size() <= 0){
-                                    System.out.print("No rooms available");
-                                    break;
+                                    System.out.println("No rooms available");
+                                    System.out.print("Make a selection to proceed: ");
                                 }
                                 else{
-                                    System.out.print(allRooms);
-
+                                    PrintMenuMethods.allAvailableRooms(allRooms);
                                 }
                             }
                             case "2" ->{
-                                System.out.print("Manage reservation");
+                                if(allRooms.size() <= 0){
+                                    System.out.println("No rooms available");
+                                    System.out.print("Make a selection to proceed: ");
+                                }
+                                else{
+                                    System.out.print("Loading Reservation ");
+                                }
                             }
                             case "3" ->{
-                                System.out.print("generate report");
+                                if(allRooms.size() <= 0){
+                                    System.out.println("No rooms available");
+                                    System.out.print("Make a selection to proceed: ");
+                                }
+                                else{
+                                    System.out.print("Generating Report ");
+                                }
                             }
                             case "4" ->{
-                                System.out.print("Mark rooms for maintenance");
+                                if(allRooms.size() <= 0){
+                                    System.out.println("No rooms available");
+                                    System.out.print("Make a selection to proceed: ");
+                                }
+                                else{
+                                    System.out.print("Checking rooms for maintenance");
+                                }
                             }
                             case "5" ->{
                                 System.out.print("Enter room number(3 digits): ");
@@ -66,11 +84,16 @@ public class Main {
                                 Room newRoom = new Room(roomNumber, roomType, roomPrice, isEmpty, isUnderMaintenance);
                                 allRooms.add(newRoom);
                                 PrintMenuMethods.successfulAction();
-                                break;
 
                             }
                             case "6" ->{
-                                System.out.print("view guest");
+                                if( allGuests.size() <= 0){
+                                    System.out.println("No guest available");
+                                    System.out.print("Make a selection to proceed: ");
+                                }
+                                else{
+                                    PrintMenuMethods.allAvailableGuests(allGuests);
+                                }
                             }
                             default -> {System.out.print("Invalid input");}
                         }
@@ -95,7 +118,9 @@ public class Main {
                                 String guestEmail = input.nextLine();
                                 System.out.print("Pick a PIN: ");
                                 String guestPin = input.nextLine();
-                                Guests newGuests = new Guests(guestName, guestPhoneNumber, guestEmail, guestPin);
+                                String occupiedRoom = null;
+                                Guests newGuest = new Guests(guestName, guestPhoneNumber, guestEmail, occupiedRoom, guestPin);
+                                allGuests.add(newGuest);
                                 PrintMenuMethods.successfulAction();
                                 break;
                             }

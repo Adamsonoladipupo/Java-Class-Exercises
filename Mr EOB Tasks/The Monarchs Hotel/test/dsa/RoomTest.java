@@ -25,14 +25,14 @@ public class RoomTest {
 
     @Test
     public void add_1_room_test(){
-        newRoom.addRoom("001", "Single", 10000, true, false);
+        newRoom.addRoom();
         assertEquals(1, newRoom.numberOfRooms());
     }
 
     @Test
     public void added_2_rooms_remove_1_room_remaining_1_room(){
-        newRoom.addRoom("001", "Single", 10000, true, false);
-        newRoom.addRoom("001", "Single", 10000, true, false);
+        newRoom.addRoom();
+        newRoom.addRoom();
         assertEquals(2, newRoom.numberOfRooms());
         newRoom.removeRoom();
         assertEquals(1, newRoom.numberOfRooms());

@@ -32,13 +32,7 @@ public class Room {
         return exitingRooms == 0;
     }
 
-    public void addRoom(String roomNumber, String roomType, int roomPrice, boolean isRoomEmpty, boolean underManitenance) {
-
-        roomDetails[0] = roomNumber;
-        roomDetails[1] = roomType;
-        roomDetails[2] = roomPrice;
-        roomDetails[3] = isRoomEmpty;
-        roomDetails[4] = underManitenance;
+    public void addRoom() {
 
         exitingRooms++;
     }
@@ -52,7 +46,21 @@ public class Room {
     }
 
 
-    public Object getRoom() {
-        return roomDetails;
+    public Object getNumber() {
+        return roomNumber;
     }
+    public Object getRoomType() {
+        return type;
+    }
+    public Object getRoomPrice() {
+        return price;
+    }
+    public Object getRoomEmptyStatus() {
+        return isRoomEmpty;
+    }
+    public Object getRoomMaintenanceStatus() {
+        return underManitenance;
+    }
+
+
 }
