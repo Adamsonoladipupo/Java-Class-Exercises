@@ -1,6 +1,7 @@
-package account;
+package bank;
 
-import bank.Account;
+import Execptions.InvalidNegativeAmountException;
+import Execptions.InvalidPasswordException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -40,33 +41,38 @@ public class AccountTest {
     }
 
     @Test
+    public void deposite_500_and_withdraw_200_with_a_wrong_password_test(){
+        account.deposit(500);
+        assertEquals(500, account.getAccountBalance());
+        assertThrows(InvalidPasswordException.class, () -> account.withdraw(500, "passworder"));
+    }
+    @Test
     public void deposit_700_and_withdraw_500_get_a_balance_of_200_test(){
         account.deposit(700);
         assertEquals(700, account.getAccountBalance());
-        account.withdraw(500);
+        account.withdraw(500, "password123");
         assertEquals(200, account.getAccountBalance());
-
     }
 
     @Test
     public void withdraw_negative_amount_to_throw_error_test(){
-        assertThrows(IllegalArgumentException.class, () -> account.withdraw(200));
+        assertThrows(InvalidNegativeAmountException.class, () -> account.withdraw(200, "password123"));
     }
 
     @Test
     public void deposit_500_withdraw_600_t0_throw_error(){
         account.deposit(500);
         assertEquals(500, account.getAccountBalance());
-        assertThrows(IllegalArgumentException.class, () -> account.withdraw(600));
+        assertThrows(InvalidNegativeAmountException.class, () -> account.withdraw(600, "password123"));
     }
 
     @Test
     public void deposit_1000_withraw_200_then_withdraw_600_accountBalance_of_200_test(){
         account.deposit(1000);
         assertEquals(1000, account.getAccountBalance());
-        account.withdraw(200);
+        account.withdraw(200, "password123");
         assertEquals(800, account.getAccountBalance());
-        account.withdraw(600);
+        account.withdraw(600, "password123");
         assertEquals(200, account.getAccountBalance());
 
     }

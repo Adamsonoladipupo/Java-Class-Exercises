@@ -1,8 +1,12 @@
-package account;
+package bank;
+
+import Execptions.InvalidNegativeAmountException;
+import Execptions.InvalidPasswordException;
 
 public class Account {
     private String accountNumber;
     private int accountBalance = 0;
+    private String password = "password123";
 
     public int getAccountBalance() {
         return accountBalance;
@@ -14,7 +18,8 @@ public class Account {
     }
 
 
-    public void withdraw(int amount) {
+    public void withdraw(int amount, String inputPassword) {
+        validatingIncorrectPassword(inputPassword);
         validateNegativeInput(amount);
         ValidateLowerThanaccountBalance(amount);
         accountBalance -= amount;
@@ -27,8 +32,12 @@ public class Account {
         }
     }
     public void ValidateLowerThanaccountBalance(int amount){
-        if (amount > accountBalance) {
-            throw new IllegalArgumentException("Insufficient funds");
+        if (amount > accountBalance) throw new InvalidNegativeAmountException("Insufficient funds");
+
+    }
+    public void validatingIncorrectPassword(String inputPassword){
+        if (!inputPassword.equals(password)){
+            throw new InvalidPasswordException("Incorrect password");
         }
     }
 }
