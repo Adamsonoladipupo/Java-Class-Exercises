@@ -6,7 +6,7 @@ import Execptions.InvalidPasswordException;
 public class Account {
     private String accountNumber;
     private int accountBalance = 0;
-    private String password = "password123";
+    private String password ;
 
     public int getAccountBalance() {
         return accountBalance;
