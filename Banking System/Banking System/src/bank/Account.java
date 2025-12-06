@@ -4,15 +4,11 @@ import Execptions.LowAccountBalanceException;
 import Execptions.NegativeAmountException;
 import Execptions.WrongPasswordException;
 
-import java.util.ArrayList;
-
 public class Account {
     private String accountName;
     private int accountNumber;
     private int accountBalance = 0;
     private String password ;
-
-    ArrayList <Object> accountList = new ArrayList<>();
 
     Account(){
     }
@@ -25,19 +21,14 @@ public class Account {
         this.password = password;
         this.accountName = accountName;
         ++accountNumber;
-        accountList.add(accountNumber);
         return accountNumber;
     }
 
-    public int getNumberOfAccountCreated(){
-        return accountList.size();
-    }
-
-    public int getAccountBalance(int accountNumber) {
+    public int getAccountBalance() {
         return accountBalance;
     }
 
-    public void deposit(int amount, int accountNumber) {
+    public void deposit(int amount) {
         if(amount < 0){
             throw new NegativeAmountException("Negative amount inputted");
         }
@@ -45,7 +36,7 @@ public class Account {
     }
 
 
-    public void withdraw(int accountNumber, int amount, String inputPassword) {
+    public void withdraw(int amount, String inputPassword) {
         if(amount < 0){
             throw new NegativeAmountException("Negative amount inputted");
         }

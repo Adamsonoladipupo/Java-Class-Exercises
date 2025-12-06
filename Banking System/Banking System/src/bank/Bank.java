@@ -1,30 +1,43 @@
-//package bank;
-//
-//import Execptions.InvalidNegativeAmountException;
-//import Execptions.InvalidPasswordException;
-//
-//public class Bank {
-//    private int accounts = 0;
-//
-//    Bank(){
-//
-//    }
-//
-//
-//    // helper methods for validating user input
-//    public void validateNegativeInput(int amount){
-//        if (amount < 0){
-//            throw new InvalidNegativeAmountException("Invalid amount");
+package bank;
+
+
+import java.util.ArrayList;
+
+public class Bank {
+    private String name = "RoowahBank";
+    private ArrayList <Account> accounts = new ArrayList<>();
+
+    Bank (){
+
+    }
+    Bank(String name){
+        this.name = name;
+    }
+
+    public int getCountAccounts() {
+        return accounts.size();
+    }
+
+    public void addAccount(Account account) {
+        accounts.add(account);
+    }
+
+    public void createAccount(String password, String accountName) {
+        Account account = new Account(password, accountName);
+        accounts.add(account);
+    }
+
+    public void transfer(Account fromAccount, Account toAccount, int amount, String password) {
+        fromAccount.withdraw(amount, password);
+        toAccount.deposit(amount);
+    }
+
+//    public int findAccount(Account findAccount) {
+//        for (Account acc : accounts){
+//            if(Object findAccount : acc){
+//                return findAccount;
+//            }
 //        }
+//        return ;
 //    }
-//    public void ValidateLowerThanaccountBalance(int amount){
-//        if (amount > accountBalance) throw new InvalidNegativeAmountException("Insufficient funds");
-//
-//    }
-//    public void validatingIncorrectPassword(String inputPassword){
-//        if (!inputPassword.equals(this.password)){
-//            throw new InvalidPasswordException("Incorrect password");
-//        }
-//    }
-//
-//}
+}
