@@ -6,6 +6,7 @@ import java.util.ArrayList;
 public class Bank {
     private String name = "RoowahBank";
     private ArrayList <Account> accounts = new ArrayList<>();
+    private Account account;
 
     Bank (){
 
@@ -22,22 +23,34 @@ public class Bank {
         accounts.add(account);
     }
 
-    public void createAccount(String password, String accountName) {
-        Account account = new Account(password, accountName);
+    public void createAccount(String password, String accountName, String accountNumber) {
+        Account account = new Account(password, accountName, accountNumber);
         accounts.add(account);
     }
 
-    public void transfer(Account fromAccount, Account toAccount, int amount, String password) {
-        fromAccount.withdraw(amount, password);
-        toAccount.deposit(amount);
+    public boolean isCheckAccountNumber(String accountNumber){
+        for (Account account : accounts){
+            if (account.getAccountNumber().equals(accountNumber)){
+                return true;
+            }
+        }
+        return false;
     }
 
-//    public int findAccount(Account findAccount) {
-//        for (Account acc : accounts){
-//            if(Object findAccount : acc){
-//                return findAccount;
-//            }
-//        }
-//        return ;
-//    }
+    public Account findAccountByAccountNumber(String accountNumber) {
+        for (Account account : accounts){
+            return account;
+        }
+        return null;
+    }
+
+    public void transfer(Account fromAccount, String toAccount, int amount, String password) {
+        fromAccount.withdraw(amount, password);
+        if (!isCheckAccountNumber(toAccount)){
+            throw new IllegalArgumentException("Sorry account does not exit");
+        }
+        findAccountByAccountNumber(toAccount).deposit(amount, toAccount);
+
+    }
+
 }

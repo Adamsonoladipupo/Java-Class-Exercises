@@ -1,9 +1,11 @@
 package bank;
 
+import java.util.Scanner;
+
 public class HelperMethods {
 
     public static void print(String userInput){
-        System.out.print(userInput);
+        System.out.println(userInput);
     }
 
     public static void mainMenu(){
@@ -11,8 +13,8 @@ public class HelperMethods {
                 Welcome to RoowahBank
                 
                 1. Create an account
-                2. Desposit
-                3. Withdraw 
+                2. Deposit
+                3. Withdraw
                 4. Check account balance
                 5. Transfer to other account
                 
@@ -20,4 +22,6 @@ public class HelperMethods {
                 """;
         print(menu);
     }
+
+
 }

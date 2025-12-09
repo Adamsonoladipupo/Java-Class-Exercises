@@ -124,10 +124,10 @@ public class Data {
 
         System.out.println("x\t\ty\t\txy\t\tx^2");
         for (int count = 0; count < this.xAxis.size(); count++){
-            System.out.print(xAxis.get(count)+"\t\t");
-            System.out.print(yAxis.get(count)+"\t");
-            System.out.print(xy.get(count)+"\t");
-            System.out.print(xSquare.get(count));
+            System.out.printf("%.0f \t\t", xAxis.get(count));
+            System.out.printf("%.0f \t\t", yAxis.get(count));
+            System.out.printf("%.0f \t\t", xy.get(count));
+            System.out.printf("%.0f", xSquare.get(count));
             System.out.println();
         }
     }

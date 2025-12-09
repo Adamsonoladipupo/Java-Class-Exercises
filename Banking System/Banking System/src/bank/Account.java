@@ -6,21 +6,33 @@ import Execptions.WrongPasswordException;
 
 public class Account {
     private String accountName;
-    private int accountNumber;
-    private int accountBalance = 0;
+    private int genAccountNumber = 0;
+    private String accountNumber;
+    private int accountBalance;
     private String password ;
 
     Account(){
     }
-    Account(String password, String accountName){
+    Account(String password, String accountName, String accountNumber){
         this.password = password;
         this.accountName = accountName;
+        this.accountNumber = accountNumber;
     }
 
-    public int createAccount(String password, String accountName) {
+//    private String generateAccountNumber(int number){
+//        String accNumber = String.valueOf(number+1);
+//        return accNumber;
+//    }
+
+    public void createAccount(String password, String accountName) {
         this.password = password;
         this.accountName = accountName;
-        ++accountNumber;
+        this.accountNumber = String.valueOf(genAccountNumber+1);
+        Account newAccount = new Account(password, accountName, accountNumber);
+        genAccountNumber++;
+    }
+
+    public String getAccountNumber(){
         return accountNumber;
     }
 
@@ -28,7 +40,7 @@ public class Account {
         return accountBalance;
     }
 
-    public void deposit(int amount) {
+    public void deposit(int amount, String accountNumber) {
         if(amount < 0){
             throw new NegativeAmountException("Negative amount inputted");
         }
