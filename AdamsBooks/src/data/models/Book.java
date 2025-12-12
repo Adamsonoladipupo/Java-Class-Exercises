@@ -3,6 +3,7 @@ package data.models;
 public class Book {
     private String name;
     private String Author;
+    private int ID;
     private int isbn;
     private int pages;
     private int quantity;
@@ -24,6 +25,14 @@ public class Book {
 
     public void setAuthor(String author) {
         Author = author;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
     public int getIsbn() {
