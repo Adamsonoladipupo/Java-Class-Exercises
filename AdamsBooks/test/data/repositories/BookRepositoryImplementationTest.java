@@ -109,5 +109,17 @@ class BookRepositoryImplementationTest {
         assertFalse(bookRepositoryImplementation.existById(4));
     }
 
+    @Test
+    public void AddAbookToTheBookRepositoryAndUpdateTheBookNameTest(){
+        Book newbook = new Book();
+        newbook.setIsbn(200);
+        bookRepositoryImplementation.save(newbook);
+        assertEquals(200, newbook.getIsbn());
+        assertEquals(1, bookRepositoryImplementation.amountOfBook());
+        newbook.setIsbn(300);
+        bookRepositoryImplementation.save(newbook);
+        assertEquals(300, newbook.getIsbn());
+    }
+
 
 }

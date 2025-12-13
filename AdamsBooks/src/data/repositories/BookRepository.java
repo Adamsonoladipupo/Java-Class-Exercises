@@ -17,5 +17,8 @@ public interface BookRepository {
 
     void deleteAll();
 
-    boolean existById(int i);
+    boolean existById(int id);
+
+    void updateBook(Book book);
+
 }

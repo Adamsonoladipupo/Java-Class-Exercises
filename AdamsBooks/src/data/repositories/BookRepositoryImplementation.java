@@ -1,7 +1,6 @@
 package data.repositories;
 
 import data.models.Book;
-import data.models.Genre;
 
 import java.util.ArrayList;
 
@@ -16,16 +15,15 @@ public class BookRepositoryImplementation implements BookRepository{
 
     @Override
     public Book save(Book book) {
+        if(isNew(book)) saveNew(book);
+        else updateBook(book);
+        return book;
+    }
+
+    private void saveNew(Book book) {
         count++;
         book.setID(count);
-        book.setName("Be an Expert in Java within 4days");
-        book.setAuthor("I am not");
-        book.setDescription("write java codes to solve real like problems in less than four days");
-        book.setEdition(33);
-        book.setGenre(Genre.HORROR);
-        book.setPages(350);
         books.add(book);
-        return book;
     }
 
     @Override
@@ -71,6 +69,19 @@ public class BookRepositoryImplementation implements BookRepository{
             }
         }
         return false;
+    }
+
+    @Override
+    public void updateBook(Book newBook) {
+        for ( Book book : books){
+            if (book.getID() == newBook.getID()){
+                book = newBook;
+            }
+        }
+    }
+
+    public boolean isNew(Book book) {
+        return book.getID() == 0;
     }
 
 }

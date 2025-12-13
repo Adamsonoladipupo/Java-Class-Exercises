@@ -1,22 +1,14 @@
 package data.models;
 
+import java.util.ArrayList;
+
 public class User {
     private String name;
-    private String Author;
-    private int pages;
-    private int quantity;
-    private String description;
-    private Genre genre;
-    private int edition;
-    private int isbn;
+    private String phoneNubmber;
+    private int id;
+    private String address;
+    private ArrayList <BookBorrowed> borrowedBooks = new ArrayList<>();
 
-    public int getEdition() {
-        return edition;
-    }
-
-    public void setEdition(int edition) {
-        this.edition = edition;
-    }
 
     public String getName() {
         return name;
@@ -26,51 +18,35 @@ public class User {
         this.name = name;
     }
 
-    public String getAuthor() {
-        return Author;
+    public String getPhoneNubmber() {
+        return phoneNubmber;
     }
 
-    public void setAuthor(String author) {
-        Author = author;
+    public void setPhoneNubmber(String phoneNubmber) {
+        this.phoneNubmber = phoneNubmber;
     }
 
-    public int getPages() {
-        return pages;
+    public int getId() {
+        return id;
     }
 
-    public void setPages(int pages) {
-        this.pages = pages;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public String getAddress() {
+        return address;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public String getDescription() {
-        return description;
+    public ArrayList<BookBorrowed> getBorrowedBooks() {
+        return borrowedBooks;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Genre getGenre() {
-        return genre;
-    }
-
-    public void setGenre(Genre genre) {
-        this.genre = genre;
-    }
-
-    public int getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(int isbn) {
-        this.isbn = isbn;
+    public void setBorrowedBooks(ArrayList<BookBorrowed> borrowedBooks) {
+        this.borrowedBooks = borrowedBooks;
     }
 }

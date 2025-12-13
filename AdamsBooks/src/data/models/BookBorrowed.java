@@ -1,24 +1,34 @@
 package data.models;
 
 public class BookBorrowed {
-    private String bookID;
-    private String userID;
+    private int bookBorrowedID;
+    private int bookID;
+    private int userID;
     private int timeBorrowed;
     private int timeReturn;
 
-    public String getBookID() {
+
+    public int getBookBorrowedID() {
+        return bookBorrowedID;
+    }
+
+    public void setBookBorrowedID(int bookBorrowedID) {
+        this.bookBorrowedID = bookBorrowedID;
+    }
+
+    public int getBookID() {
         return bookID;
     }
 
-    public void setBookID(String bookID) {
+    public void setBookID(int bookID) {
         this.bookID = bookID;
     }
 
-    public String getUserID() {
+    public int getUserID() {
         return userID;
     }
 
-    public void setUserID(String userID) {
+    public void setUserID(int userID) {
         this.userID = userID;
     }
 
