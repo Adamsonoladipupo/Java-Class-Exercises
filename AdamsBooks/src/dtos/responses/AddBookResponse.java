@@ -6,11 +6,6 @@ public class AddBookResponse {
     private String name;
     private String Author;
     private int ID;
-    private int isbn;
-    private int pages;
-    private String description;
-    private Genre genre;
-    private int edition;
 
     public String getName() {
         return name;
@@ -32,43 +27,8 @@ public class AddBookResponse {
         return ID;
     }
 
-    public int getIsbn() {
-        return isbn;
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
-    public void setIsbn(int isbn) {
-        this.isbn = isbn;
-    }
-
-    public int getPages() {
-        return pages;
-    }
-
-    public void setPages(int pages) {
-        this.pages = pages;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Genre getGenre() {
-        return genre;
-    }
-
-    public void setGenre(Genre genre) {
-        this.genre = genre;
-    }
-
-    public int getEdition() {
-        return edition;
-    }
-
-    public void setEdition(int edition) {
-        this.edition = edition;
-    }
 }
