@@ -7,7 +7,6 @@ import java.util.ArrayList;
 public class AddUserRequest {
     private String name;
     private String phoneNubmber;
-    private int id;
     private String address;
     private ArrayList <BookBorrowed> borrowedBooks = new ArrayList<>();
 
@@ -22,18 +21,10 @@ public class AddUserRequest {
 
     public String getPhoneNubmber() {
         return phoneNubmber;
-    }
+    }   
 
     public void setPhoneNubmber(String phoneNubmber) {
         this.phoneNubmber = phoneNubmber;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getAddress() {

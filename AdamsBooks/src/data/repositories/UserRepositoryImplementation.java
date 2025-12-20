@@ -9,6 +9,11 @@ public class UserRepositoryImplementation implements UserRepository{
     private ArrayList <User> users = new ArrayList<>();
 
     @Override
+    public int getCount() {
+        return count;
+    }
+
+    @Override
     public int amountOfUsers() {
         return users.size();
     }

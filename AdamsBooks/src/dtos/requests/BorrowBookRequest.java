@@ -1,6 +1,6 @@
 package dtos.requests;
 
-public class BorrowedBookRequest {
+public class BorrowBookRequest {
     private int bookBorrowedID;
     private int bookID;
     private int userID;

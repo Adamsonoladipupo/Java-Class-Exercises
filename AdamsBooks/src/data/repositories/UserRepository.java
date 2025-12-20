@@ -5,6 +5,8 @@ import data.models.User;
 public interface UserRepository {
 
 
+    int getCount();
+
     int amountOfUsers();
 
     User save(User user);

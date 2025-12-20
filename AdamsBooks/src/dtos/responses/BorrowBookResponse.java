@@ -1,6 +1,6 @@
 package dtos.responses;
 
-public class BorrowedBookResponse {
+public class BorrowBookResponse {
     private int bookBorrowedID;
     private int userID;
 
@@ -20,5 +20,5 @@ public class BorrowedBookResponse {
     public void setUserID(int userID) {
         this.userID = userID;
     }
-    
+
 }

@@ -24,6 +24,7 @@ class UserRepositoryImplementationTest {
         User user1 = new User();
         newUserRepository.save(user1);
         assertEquals(1, newUserRepository.amountOfUsers());
+        assertEquals(1, newUserRepository.getCount());
 
     }
 
