@@ -11,6 +11,9 @@ public class MyStack {
     }
 
 
+    public int count(){
+        return count;
+    }
     public boolean empty() {
         return count ==0;
     }
@@ -24,5 +27,20 @@ public class MyStack {
 
     public Object pop() {
         return element[--count];
+    }
+
+    public Object peek() {
+        return element[--count];
+    }
+
+    public int search(Object searchedElement) {
+        int index = 0;
+        for (Object object: element){
+            index++;
+            if (object == searchedElement) {
+                return index;
+            }
+        }
+        return -1;
     }
 }

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="327fd9b2-0d80-45a6-832a-59457918d8c7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Bar-Chart Printing Program/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bar-Chart Printing Program/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bar-Chart Printing Program/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bar-Chart Printing Program/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bar-Chart Printing Program/Bar-Chart Printing Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Election Snacks.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Ballot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/BallotBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Candidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/PollingUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Voter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/entities/PollingUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/entities/VoterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My Data Structure/My Data Strutures/src/dsa/MyArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My Data Structure/My Data Strutures/test/dsa/MyArrayListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../My Data Structure/My Data Strutures/src/dsa/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../My Data Structure/My Data Strutures/src/dsa/MyStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../My Data Structure/My Data Strutures/test/dsa/MySatckTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../My Data Structure/My Data Strutures/test/dsa/MyStackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../My Data Structure/My Data Strutures/test/dsa/MyStackTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="37FKqCqdrYU8hXK9xh69K6Ab4LJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.PollingUnitTest.Test.executor": "Run",
+    "JUnit.VoterTest.ANewVoterSetNameAndEmailTest.executor": "Run",
+    "JUnit.VoterTest.CreateNewVoterAndCompareThereVoterIDTest.executor": "Run",
+    "JUnit.VoterTest.CreateTwoVotersAndCompareTheirVoterIDTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "/home/adamson/Documents/Semicolon/Java-Class-Exercises/Election Snacks/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="entities" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PollingUnitTest.Test">
+    <configuration name="PollingUnitTest.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Election Snacks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="entities" />
+      <option name="MAIN_CLASS_NAME" value="entities.PollingUnitTest" />
+      <option name="METHOD_NAME" value="Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VoterTest.ANewVoterSetNameAndEmailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Election Snacks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="entities" />
+      <option name="MAIN_CLASS_NAME" value="entities.VoterTest" />
+      <option name="METHOD_NAME" value="ANewVoterSetNameAndEmailTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VoterTest.CreateNewVoterAndCompareThereVoterIDTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Election Snacks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="entities" />
+      <option name="MAIN_CLASS_NAME" value="entities.VoterTest" />
+      <option name="METHOD_NAME" value="CreateNewVoterAndCompareThereVoterIDTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VoterTest.CreateTwoVotersAndCompareTheirVoterIDTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Election Snacks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="entities" />
+      <option name="MAIN_CLASS_NAME" value="entities.VoterTest" />
+      <option name="METHOD_NAME" value="CreateTwoVotersAndCompareTheirVoterIDTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PollingUnitTest.Test" />
+        <item itemvalue="JUnit.VoterTest.CreateTwoVotersAndCompareTheirVoterIDTest" />
+        <item itemvalue="JUnit.VoterTest.ANewVoterSetNameAndEmailTest" />
+        <item itemvalue="JUnit.VoterTest.CreateNewVoterAndCompareThereVoterIDTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="327fd9b2-0d80-45a6-832a-59457918d8c7" name="Changes" comment="" />
+      <created>1766493568253</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766493568253</updated>
+    </task>
+    <servers />
+  </component>
+</project>
