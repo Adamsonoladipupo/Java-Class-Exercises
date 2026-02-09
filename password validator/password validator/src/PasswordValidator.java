@@ -29,7 +29,6 @@ public class PasswordValidator {
                     break;
                 }
             }
-
         }
         if (!containsSpecialCharacter) throw new PasswordException("sorry, password must contain a special character");
         if (!containsNumber) throw new PasswordException("Sorry, password must contain number");

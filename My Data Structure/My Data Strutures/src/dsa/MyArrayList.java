@@ -2,7 +2,7 @@ package dsa;
 
 public class MyArrayList {
     private int count = 0;
-    private int initialLength = 6;
+    private int initialLength = 10;
     private Object[] myArrayList = new Object[initialLength];
 
 
